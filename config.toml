@@ -1,0 +1,49 @@
+baseURL = "https://upscvisionpreponline.com/"
+languageCode = "en-us"
+title = "UPSC Vision Prep - Master the Art of Civil Services"
+
+
+[params]
+  description = "India's leading UPSC CSE preparation platform with expert faculty, adaptive testing, and comprehensive study materials."
+  author = "UPSC Vision Prep"
+  
+[params.social]
+  facebook = "#"
+  twitter = "#"
+  instagram = "#"
+  youtube = "#"
+  linkedin = "#"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Courses"
+    url = "/courses/"
+    weight = 2
+  [[menu.main]]
+    name = "Study Resources"
+    url = "/resources/"
+    weight = 3
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 4
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 5
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 6
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
