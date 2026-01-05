@@ -1,0 +1,77 @@
+<!-- UPSC Budget Calculator Widget -->
+<div class="cg-element-calculator" style="max-width: 600px; margin: 20px auto; padding: 30px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); font-family: 'Arial', sans-serif; color: white;">
+  <h2 style="text-align: center; margin-bottom: 20px;">UPSC Preparation Budget Calculator</h2>
+  
+  <div class="calculator-form">
+    <div class="form-group" style="margin-bottom: 15px;">
+      <label style="display: block; margin-bottom: 5px;">Monthly Income (₹):</label>
+      <input type="number" id="income" placeholder="Enter your monthly income" 
+             style="width: 100%; padding: 10px; border-radius: 5px; border: none; font-size: 16px;">
+    </div>
+    
+    <div class="form-group" style="margin-bottom: 15px;">
+      <label style="display: block; margin-bottom: 5px;">Study Hours per Day:</label>
+      <input type="number" id="studyHours" placeholder="Enter hours (e.g., 6)" 
+             style="width: 100%; padding: 10px; border-radius: 5px; border: none; font-size: 16px;">
+    </div>
+    
+    <div class="form-group" style="margin-bottom: 15px;">
+      <label style="display: block; margin-bottom: 5px;">Preparation Duration (months):</label>
+      <input type="number" id="duration" placeholder="Enter months (e.g., 12)" 
+             style="width: 100%; padding: 10px; border-radius: 5px; border: none; font-size: 16px;">
+    </div>
+    
+    <button onclick="calculateBudget()" 
+            style="width: 100%; padding: 12px; background: white; color: #667eea; border: none; border-radius: 5px; font-size: 18px; font-weight: bold; cursor: pointer; transition: all 0.3s;">
+      Calculate Budget
+    </button>
+    
+    <div id="result" style="margin-top: 20px; padding: 15px; background: rgba(255,255,255,0.2); border-radius: 10px; display: none;">
+      <h3 style="margin-bottom: 10px;">Your Recommended Budget:</h3>
+      <div id="budgetBreakdown"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+function calculateBudget() {
+  const income = parseFloat(document.getElementById('income').value);
+  const studyHours = parseFloat(document.getElementById('studyHours').value);
+  const duration = parseFloat(document.getElementById('duration').value);
+  
+  if (!income || !studyHours || !duration) {
+    alert('Please fill in all fields!');
+    return;
+  }
+  
+  // Calculate recommended budget allocation
+  const booksAndMaterials = income * 0.15; // 15% for books
+  const coachingFees = income * 0.30; // 30% for coaching
+  const testSeries = income * 0.10; // 10% for test series
+  const miscellaneous = income * 0.05; // 5% for misc
+  
+  const totalMonthly = booksAndMaterials + coachingFees + testSeries + miscellaneous;
+  const totalForDuration = totalMonthly * duration;
+  
+  const resultDiv = document.getElementById('result');
+  const breakdownDiv = document.getElementById('budgetBreakdown');
+  
+  breakdownDiv.innerHTML = `
+    <p><strong>Monthly Breakdown:</strong></p>
+    <ul style="list-style: none; padding: 0;">
+      <li>📚 Books & Materials: ₹${booksAndMaterials.toFixed(0)}</li>
+      <li>🎓 Coaching Fees: ₹${coachingFees.toFixed(0)}</li>
+      <li>📝 Test Series: ₹${testSeries.toFixed(0)}</li>
+      <li>🔧 Miscellaneous: ₹${miscellaneous.toFixed(0)}</li>
+    </ul>
+    <p style="margin-top: 15px; font-size: 20px; font-weight: bold;">
+      💰 Total Monthly: ₹${totalMonthly.toFixed(0)}
+    </p>
+    <p style="font-size: 18px;">
+      📊 Total for ${duration} months: ₹${totalForDuration.toFixed(0)}
+    </p>
+  `;
+  
+  resultDiv.style.display = 'block';
+}
+</script>
