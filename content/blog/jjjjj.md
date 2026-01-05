@@ -644,254 +644,502 @@ The key to success lies in consistency, strategic thinking, and maintaining unwa
 4. **Start daily current affairs compilation** using free government resources
 5. **Begin mock test practice** to assess and improve your preparation level
 
-The civil services await dedicated individuals who can serve the nation with integrity and competence. Your financial background doesn't determine your potential – your commitment to excellence does.
+The civil services await dedicated individuals who can serve the nation with integrity and competence. Your financial background doesn't determine your potential – your commitment to excellence does
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+\    <meta charset="UTF-8">
+
+\    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+\    <title>UPSC Budget Calculator</title>
+
+\    <style>
+
+\    .cg-element-calculator {
+
+\    max-width: 600px;
+
+\    margin: 20px auto;
+
+\    padding: 30px;
+
+\    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+\    border-radius: 15px;
+
+\    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+\    font-family: 'Arial', sans-serif;
+
+\    color: white;
+
+\    }
+
+\    
+
+\    .cg-element-title {
+
+\    text-align: center;
+
+\    font-size: 28px;
+
+\    font-weight: bold;
+
+\    margin-bottom: 25px;
+
+\    color: white;
+
+\    }
+
+\    
+
+\    .cg-element-form-group {
+
+\    margin-bottom: 20px;
+
+\    }
+
+\    
+
+\    .cg-element-label {
+
+\    display: block;
+
+\    font-weight: bold;
+
+\    margin-bottom: 8px;
+
+\    font-size: 16px;
+
+\    }
+
+\    
+
+\    .cg-element-input {
+
+\    width: 100%;
+
+\    padding: 12px;
+
+\    border: none;
+
+\    border-radius: 8px;
+
+\    font-size: 16px;
+
+\    background: rgba(255,255,255,0.9);
+
+\    color: #333;
+
+\    box-sizing: border-box;
+
+\    }
+
+\    
+
+\    .cg-element-checkbox-group {
+
+\    display: grid;
+
+\    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+\    gap: 15px;
+
+\    margin-top: 10px;
+
+\    }
+
+\    
+
+\    .cg-element-checkbox-item {
+
+\    display: flex;
+
+\    align-items: center;
+
+\    background: rgba(255,255,255,0.1);
+
+\    padding: 12px;
+
+\    border-radius: 8px;
+
+\    transition: background 0.3s ease;
+
+\    }
+
+\    
+
+\    .cg-element-checkbox-item:hover {
+
+\    background: rgba(255,255,255,0.2);
+
+\    }
+
+\    
+
+\    .cg-element-checkbox {
+
+\    margin-right: 10px;
+
+\    transform: scale(1.2);
+
+\    }
+
+\    
+
+\    .cg-element-button {
+
+\    width: 100%;
+
+\    padding: 15px;
+
+\    background: #ff6b6b;
+
+\    color: white;
+
+\    border: none;
+
+\    border-radius: 8px;
+
+\    font-size: 18px;
+
+\    font-weight: bold;
+
+\    cursor: pointer;
+
+\    transition: background 0.3s ease;
+
+\    margin-top: 20px;
+
+\    }
+
+\    
+
+\    .cg-element-button:hover {
+
+\    background: #ff5252;
+
+\    }
+
+\    
+
+\    .cg-element-result {
+
+\    margin-top: 25px;
+
+\    padding: 20px;
+
+\    background: rgba(255,255,255,0.1);
+
+\    border-radius: 10px;
+
+\    text-align: center;
+
+\    display: none;
+
+\    }
+
+\    
+
+\    .cg-element-total {
+
+\    font-size: 32px;
+
+\    font-weight: bold;
+
+\    color: #ffeb3b;
+
+\    margin-bottom: 15px;
+
+\    }
+
+\    
+
+\    .cg-element-breakdown {
+
+\    text-align: left;
+
+\    margin-top: 15px;
+
+\    }
+
+\    
+
+\    .cg-element-breakdown-item {
+
+\    display: flex;
+
+\    justify-content: space-between;
+
+\    margin-bottom: 8px;
+
+\    padding: 5px 0;
+
+\    border-bottom: 1px solid rgba(255,255,255,0.2);
+
+\    }
+
+\    
+
+\    @media (max-width: 768px) {
+
+\    .cg-element-calculator {
+
+\    margin: 10px;
+
+\    padding: 20px;
+
+\    }
+
+\    
+
+\    .cg-element-checkbox-group {
+
+\    grid-template-columns: 1fr;
+
+\    }
+
+\    
+
+\    .cg-element-title {
+
+\    font-size: 24px;
+
+\    }
+
+\    }
+
+\    </style>
+
+</head>
+
+<body>
+
+\    <div class="cg-element-calculator">
+
+\    <h2 class="cg-element-title">UPSC Budget Preparation Calculator</h2>
+
+\    
+
+\    <div class="cg-element-form-group">
+
+\    <label class="cg-element-label">Preparation Duration (months):</label>
+
+\    <input type="number" id="cgDuration" class="cg-element-input" min="6" max="36" value="18" placeholder="Enter months">
+
+\    </div>
+
+\    
+
+\    <div class="cg-element-form-group">
+
+\    <label class="cg-element-label">Select Your Required Resources:</label>
+
+\    <div class="cg-element-checkbox-group">
+
+\    <div class="cg-element-checkbox-item">
+
+\    <input type="checkbox" id="cgNcert" class="cg-element-checkbox" checked>
+
+\    <label for="cgNcert">NCERT Complete Set (Rs 4,000)</label>
+
+\    </div>
+
+\    <div class="cg-element-checkbox-item">
+
+\    <input type="checkbox" id="cgReference" class="cg-element-checkbox" checked>
+
+\    <label for="cgReference">Reference Books (Rs 8,000)</label>
+
+\    </div>
+
+\    <div class="cg-element-checkbox-item">
+
+\    <input type="checkbox" id="cgInternet" class="cg-element-checkbox" checked>
+
+\    <label for="cgInternet">Internet Connection (Rs 300/month)</label>
+
+\    </div>
+
+\    <div class="cg-element-checkbox-item">
+
+\    <input type="checkbox" id="cgStationery" class="cg-element-checkbox">
+
+\    <label for="cgStationery">Stationery & Printing (Rs 2,000)</label>
+
+\    </div>
+
+\    <div class="cg-element-checkbox-item">
+
+\    <input type="checkbox" id="cgMagazines" class="cg-element-checkbox">
+
+\    <label for="cgMagazines">Magazine Subscriptions (Rs 3,000)</label>
+
+\    </div>
+
+\    <div class="cg-element-checkbox-item">
+
+\    <input type="checkbox" id="cgMockTests" class="cg-element-checkbox">
+
+\    <label for="cgMockTests">Mock Test Series (Rs 4,000)</label>
+
+\    </div>
+
+\    <div class="cg-element-checkbox-item">
+
+\    <input type="checkbox" id="cgInterview" class="cg-element-checkbox">
+
+\    <label for="cgInterview">Interview Preparation (Rs 2,000)</label>
+
+\    </div>
+
+\    <div class="cg-element-checkbox-item">
+
+\    <input type="checkbox" id="cgMiscellaneous" class="cg-element-checkbox">
+
+\    <label for="cgMiscellaneous">Miscellaneous (Rs 1,000)</label>
+
+\    </div>
+
+\    </div>
+
+\    </div>
+
+\    
+
+\    <button class="cg-element-button" onclick="calculateBudget()">Calculate My UPSC Budget</button>
+
+\    
+
+\    <div id="cgResult" class="cg-element-result">
+
+\    <div class="cg-element-total" id="cgTotalAmount">Rs 0</div>
+
+\    <p>Your estimated UPSC preparation budget</p>
+
+\    <div class="cg-element-breakdown" id="cgBreakdown"></div>
+
+\    </div>
+
+\    </div>
+
+
+
+\    <script>
+
+\    function calculateBudget() {
+
+\    const duration = parseInt(document.getElementById('cgDuration').value) || 18;
+
+\    let total = 0;
+
+\    let breakdown = \[];
+
+\    
+
+\    const resources = [
+
+\    {id: 'cgNcert', name: 'NCERT Complete Set', cost: 4000, recurring: false},
+
+\    {id: 'cgReference', name: 'Reference Books', cost: 8000, recurring: false},
+
+\    {id: 'cgInternet', name: 'Internet Connection', cost: 300, recurring: true},
+
+\    {id: 'cgStationery', name: 'Stationery & Printing', cost: 2000, recurring: false},
+
+\    {id: 'cgMagazines', name: 'Magazine Subscriptions', cost: 3000, recurring: false},
+
+\    {id: 'cgMockTests', name: 'Mock Test Series', cost: 4000, recurring: false},
+
+\    {id: 'cgInterview', name: 'Interview Preparation', cost: 2000, recurring: false},
+
+\    {id: 'cgMiscellaneous', name: 'Miscellaneous', cost: 1000, recurring: false}
+
+\    ];
+
+\    
+
+\    resources.forEach(resource => {
+
+\    const checkbox = document.getElementById(resource.id);
+
+\    if (checkbox.checked) {
+
+\    let itemCost = resource.recurring ? resource.cost * duration : resource.cost;
+
+\    total += itemCost;
+
+\    breakdown.push({
+
+\    name: resource.name,
+
+\    cost: itemCost
+
+\    });
+
+\    }
+
+\    });
+
+\    
+
+\    document.getElementById('cgTotalAmount').textContent = \`Rs ${total.toLocaleString()}\`;
+
+\    
+
+\    let breakdownHTML = '';
+
+\    breakdown.forEach(item => {
+
+\    breakdownHTML += `
+
+\    <div class="cg-element-breakdown-item">
+
+\    <span>${item.name}</span>
+
+\    <span>Rs ${item.cost.toLocaleString()}</span>
+
+\    </div>
+
+\    `;
+
+\    });
+
+\    
+
+\    document.getElementById('cgBreakdown').innerHTML = breakdownHTML;
+
+\    document.getElementById('cgResult').style.display = 'block';
+
+\    
+
+\    // Smooth scroll to result
+
+\    document.getElementById('cgResult').scrollIntoView({behavior: 'smooth'});
+
+\    }
+
+\    
+
+\    // Initialize calculator on page load
+
+\    document.addEventListener('DOMContentLoaded', function() {
+
+\    calculateBudget();
+
+\    });
+
+\    </script>
+
+</body>
+
+</html>
 
 ```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UPSC Budget Calculator</title>
-    <style>
-        .cg-element-calculator {
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 30px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            font-family: 'Arial', sans-serif;
-            color: white;
-        }
-        
-        .cg-element-title {
-            text-align: center;
-            font-size: 28px;
-            font-weight: bold;
-            margin-bottom: 25px;
-            color: white;
-        }
-        
-        .cg-element-form-group {
-            margin-bottom: 20px;
-        }
-        
-        .cg-element-label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 8px;
-            font-size: 16px;
-        }
-        
-        .cg-element-input {
-            width: 100%;
-            padding: 12px;
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            background: rgba(255,255,255,0.9);
-            color: #333;
-            box-sizing: border-box;
-        }
-        
-        .cg-element-checkbox-group {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin-top: 10px;
-        }
-        
-        .cg-element-checkbox-item {
-            display: flex;
-            align-items: center;
-            background: rgba(255,255,255,0.1);
-            padding: 12px;
-            border-radius: 8px;
-            transition: background 0.3s ease;
-        }
-        
-        .cg-element-checkbox-item:hover {
-            background: rgba(255,255,255,0.2);
-        }
-        
-        .cg-element-checkbox {
-            margin-right: 10px;
-            transform: scale(1.2);
-        }
-        
-        .cg-element-button {
-            width: 100%;
-            padding: 15px;
-            background: #ff6b6b;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 18px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background 0.3s ease;
-            margin-top: 20px;
-        }
-        
-        .cg-element-button:hover {
-            background: #ff5252;
-        }
-        
-        .cg-element-result {
-            margin-top: 25px;
-            padding: 20px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 10px;
-            text-align: center;
-            display: none;
-        }
-        
-        .cg-element-total {
-            font-size: 32px;
-            font-weight: bold;
-            color: #ffeb3b;
-            margin-bottom: 15px;
-        }
-        
-        .cg-element-breakdown {
-            text-align: left;
-            margin-top: 15px;
-        }
-        
-        .cg-element-breakdown-item {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 8px;
-            padding: 5px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.2);
-        }
-        
-        @media (max-width: 768px) {
-            .cg-element-calculator {
-                margin: 10px;
-                padding: 20px;
-            }
-            
-            .cg-element-checkbox-group {
-                grid-template-columns: 1fr;
-            }
-            
-            .cg-element-title {
-                font-size: 24px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="cg-element-calculator">
-        <h2 class="cg-element-title">UPSC Budget Preparation Calculator</h2>
-        
-        <div class="cg-element-form-group">
-            <label class="cg-element-label">Preparation Duration (months):</label>
-            <input type="number" id="cgDuration" class="cg-element-input" min="6" max="36" value="18" placeholder="Enter months">
-        </div>
-        
-        <div class="cg-element-form-group">
-            <label class="cg-element-label">Select Your Required Resources:</label>
-            <div class="cg-element-checkbox-group">
-                <div class="cg-element-checkbox-item">
-                    <input type="checkbox" id="cgNcert" class="cg-element-checkbox" checked>
-                    <label for="cgNcert">NCERT Complete Set (Rs 4,000)</label>
-                </div>
-                <div class="cg-element-checkbox-item">
-                    <input type="checkbox" id="cgReference" class="cg-element-checkbox" checked>
-                    <label for="cgReference">Reference Books (Rs 8,000)</label>
-                </div>
-                <div class="cg-element-checkbox-item">
-                    <input type="checkbox" id="cgInternet" class="cg-element-checkbox" checked>
-                    <label for="cgInternet">Internet Connection (Rs 300/month)</label>
-                </div>
-                <div class="cg-element-checkbox-item">
-                    <input type="checkbox" id="cgStationery" class="cg-element-checkbox">
-                    <label for="cgStationery">Stationery & Printing (Rs 2,000)</label>
-                </div>
-                <div class="cg-element-checkbox-item">
-                    <input type="checkbox" id="cgMagazines" class="cg-element-checkbox">
-                    <label for="cgMagazines">Magazine Subscriptions (Rs 3,000)</label>
-                </div>
-                <div class="cg-element-checkbox-item">
-                    <input type="checkbox" id="cgMockTests" class="cg-element-checkbox">
-                    <label for="cgMockTests">Mock Test Series (Rs 4,000)</label>
-                </div>
-                <div class="cg-element-checkbox-item">
-                    <input type="checkbox" id="cgInterview" class="cg-element-checkbox">
-                    <label for="cgInterview">Interview Preparation (Rs 2,000)</label>
-                </div>
-                <div class="cg-element-checkbox-item">
-                    <input type="checkbox" id="cgMiscellaneous" class="cg-element-checkbox">
-                    <label for="cgMiscellaneous">Miscellaneous (Rs 1,000)</label>
-                </div>
-            </div>
-        </div>
-        
-        <button class="cg-element-button" onclick="calculateBudget()">Calculate My UPSC Budget</button>
-        
-        <div id="cgResult" class="cg-element-result">
-            <div class="cg-element-total" id="cgTotalAmount">Rs 0</div>
-            <p>Your estimated UPSC preparation budget</p>
-            <div class="cg-element-breakdown" id="cgBreakdown"></div>
-        </div>
-    </div>
 
-    <script>
-        function calculateBudget() {
-            const duration = parseInt(document.getElementById('cgDuration').value) || 18;
-            let total = 0;
-            let breakdown = [];
-            
-            const resources = [
-                {id: 'cgNcert', name: 'NCERT Complete Set', cost: 4000, recurring: false},
-                {id: 'cgReference', name: 'Reference Books', cost: 8000, recurring: false},
-                {id: 'cgInternet', name: 'Internet Connection', cost: 300, recurring: true},
-                {id: 'cgStationery', name: 'Stationery & Printing', cost: 2000, recurring: false},
-                {id: 'cgMagazines', name: 'Magazine Subscriptions', cost: 3000, recurring: false},
-                {id: 'cgMockTests', name: 'Mock Test Series', cost: 4000, recurring: false},
-                {id: 'cgInterview', name: 'Interview Preparation', cost: 2000, recurring: false},
-                {id: 'cgMiscellaneous', name: 'Miscellaneous', cost: 1000, recurring: false}
-            ];
-            
-            resources.forEach(resource => {
-                const checkbox = document.getElementById(resource.id);
-                if (checkbox.checked) {
-                    let itemCost = resource.recurring ? resource.cost * duration : resource.cost;
-                    total += itemCost;
-                    breakdown.push({
-                        name: resource.name,
-                        cost: itemCost
-                    });
-                }
-            });
-            
-            document.getElementById('cgTotalAmount').textContent = `Rs ${total.toLocaleString()}`;
-            
-            let breakdownHTML = '';
-            breakdown.forEach(item => {
-                breakdownHTML += `
-                    <div class="cg-element-breakdown-item">
-                        <span>${item.name}</span>
-                        <span>Rs ${item.cost.toLocaleString()}</span>
-                    </div>
-                `;
-            });
-            
-            document.getElementById('cgBreakdown').innerHTML = breakdownHTML;
-            document.getElementById('cgResult').style.display = 'block';
-            
-            // Smooth scroll to result
-            document.getElementById('cgResult').scrollIntoView({behavior: 'smooth'});
-        }
-        
-        // Initialize calculator on page load
-        document.addEventListener('DOMContentLoaded', function() {
-            calculateBudget();
-        });
-    </script>
-</body>
-</html>
 ```
