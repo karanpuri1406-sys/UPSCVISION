@@ -1,0 +1,33 @@
+hero:
+  heading: "Master the Art of Civil Services"
+  subheading: "Join India's leading UPSC CSE preparation platform with expert faculty, comprehensive study materials, and adaptive testing system designed to help you succeed in your civil services journey."
+  cta_primary: "Explore Courses"
+  cta_primary_link: "/courses/"
+  cta_secondary: "Watch a Video"
+  hero_image: "/uploads/hero-illustration.png"
+
+stats:
+  - number: "500+"
+    label: "Learning Videos"
+  - number: "10k+"
+    label: "Live Mock Tests"
+  - number: "10,000+"
+    label: "MCQs Available"
+
+features:
+  title: "Built for Serious Aspirants"
+  items:
+    - title: "Expert Faculty"
+      description: "Learn from experienced and highly qualified teachers who have years of experience in UPSC preparation and mentoring successful candidates."
+      icon_color: "blue"
+    - title: "Adaptive Testing"
+      description: "Our smart test series adapts to your learning pace and identifies weak areas, providing personalized question sets to maximize your preparation efficiency."
+      icon_color: "orange"
+    - title: "Career Offers 360°"
+      description: "Beyond exam preparation, we provide comprehensive career guidance, interview preparation, and placement assistance to help you achieve your goals."
+      icon_color: "green"
+
+cta_section:
+  heading: "Start Your Journey Today"
+  subheading: "Join thousands of successful UPSC aspirants who have achieved their dreams with our comprehensive preparation platform. Your success story starts here."
+  button_text: "Enroll Now"

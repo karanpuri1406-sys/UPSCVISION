@@ -1,0 +1,37 @@
+{{ define "main" }}
+<article class="section">
+  <div class="blog-single container">
+    <div class="blog-header">
+      <div class="blog-meta">
+        <span class="blog-category">{{ .Params.category }}</span>
+        <span>{{ .Date.Format "January 02, 2006" }}</span>
+        {{ with .Params.author }}
+        <span>by {{ . }}</span>
+        {{ end }}
+      </div>
+      <h1>{{ .Title }}</h1>
+    </div>
+    
+    {{ with .Params.featured_image }}
+    <img src="{{ . }}" alt="{{ $.Title }}" class="blog-featured-image" />
+    {{ end }}
+    
+    <div class="blog-body">
+      {{ .Content }}
+    </div>
+    
+    {{ with .Params.tags }}
+    <div class="blog-tags" style="margin-top: 3rem;">
+      <strong>Tags:</strong>
+      {{ range . }}
+      <span style="display: inline-block; background: var(--light-bg); padding: 0.5rem 1rem; border-radius: 20px; margin: 0.5rem 0.25rem; font-size: 0.9rem;">{{ . }}</span>
+      {{ end }}
+    </div>
+    {{ end }}
+    
+    <div style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--gray-200); text-align: center;">
+      <a href="/blog/" class="btn btn-outline">← Back to All Articles</a>
+    </div>
+  </div>
+</article>
+{{ end }}

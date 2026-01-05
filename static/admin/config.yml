@@ -1,0 +1,163 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Uncomment for local testing
+# local_backend: true
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+# Enable editorial workflow (draft, review, ready)
+publish_mode: editorial_workflow
+
+collections:
+  # Blog Posts Collection
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "blog/{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Slug", name: "slug", widget: "string", required: false, hint: "Leave empty to auto-generate from title"}
+      - {label: "Publish Date", name: "date", widget: "datetime", required: true}
+      - {label: "Author", name: "author", widget: "string", default: "UPSC Vision Prep Team"}
+      - {label: "Featured Image", name: "featured_image", widget: "image", required: true}
+      - {label: "Category", name: "category", widget: "select", options: ["Current Affairs", "Exam Strategy", "Optional Subjects", "Success Stories", "Study Tips", "Interview Preparation", "Book Reviews", "Motivational"], required: true}
+      - {label: "Excerpt", name: "excerpt", widget: "text", required: true, hint: "Short description for preview (150-200 characters)"}
+      - {label: "Body", name: "body", widget: "markdown", required: true}
+      - {label: "SEO Title", name: "seo_title", widget: "string", required: false, hint: "If empty, will use post title"}
+      - {label: "SEO Description", name: "seo_description", widget: "text", required: false, hint: "Meta description for search engines"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false, hint: "Show on homepage"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+
+  # Courses Collection
+  - name: "courses"
+    label: "Courses"
+    folder: "content/courses"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "courses/{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Slug", name: "slug", widget: "string", required: false}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image", required: true}
+      - {label: "Short Description", name: "description", widget: "text", required: true}
+      - {label: "Full Description", name: "body", widget: "markdown", required: true}
+      - {label: "Price", name: "price", widget: "number", required: true}
+      - {label: "Instructor", name: "instructor", widget: "string", required: true}
+      - {label: "Duration", name: "duration", widget: "string", required: true, hint: "e.g., 6 months, 120 hours"}
+      - {label: "Category", name: "category", widget: "select", options: ["GS Foundation", "Optional Subjects", "Test Series", "Interview Preparation", "Current Affairs", "Answer Writing", "CSAT"], required: true}
+      - {label: "Status", name: "status", widget: "select", options: ["New", "Upcoming", "Ongoing", "Completed"], default: "Ongoing"}
+      - {label: "Features", name: "features", widget: "list", required: true, hint: "Key features of the course"}
+      - label: "Curriculum"
+        name: "curriculum"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Module Title", name: "module_title", widget: "string"}
+          - {label: "Topics", name: "topics", widget: "list"}
+      - {label: "Enrollment Link", name: "enrollment_link", widget: "string", required: false}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}
+      - {label: "Order", name: "order", widget: "number", default: 0, hint: "Lower numbers appear first"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+
+  # Study Resources Collection
+  - name: "resources"
+    label: "Study Resources"
+    folder: "content/resources"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Type", name: "type", widget: "select", options: ["Daily News", "NCERT Notes", "Practice Tests", "Answer Writing", "Previous Papers", "Short Films", "Current Affairs", "Study Materials"], required: true}
+      - {label: "Description", name: "description", widget: "text", required: true}
+      - {label: "Content", name: "body", widget: "markdown", required: false}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
+      - {label: "External Link", name: "link_url", widget: "string", required: false, hint: "Link to external resource if applicable"}
+      - {label: "PDF File", name: "pdf_file", widget: "file", required: false}
+      - {label: "Icon Color", name: "icon_color", widget: "select", options: ["blue", "orange", "purple", "green", "red", "mint"], default: "blue"}
+      - {label: "Order", name: "order", widget: "number", default: 0}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+
+  # Testimonials Collection
+  - name: "testimonials"
+    label: "Testimonials"
+    folder: "content/testimonials"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Student Name", name: "student_name", widget: "string", required: true}
+      - {label: "Photo", name: "photo", widget: "image", required: true}
+      - {label: "Review Text", name: "review_text", widget: "text", required: true}
+      - {label: "Rating", name: "rating", widget: "number", min: 1, max: 5, default: 5, value_type: "int"}
+      - {label: "Batch Year", name: "batch_year", widget: "string", required: false}
+      - {label: "Rank Achieved", name: "rank_achieved", widget: "string", required: false, hint: "e.g., AIR 127"}
+      - {label: "Service", name: "service", widget: "string", required: false, hint: "e.g., IAS, IPS, IFS"}
+      - {label: "Order", name: "order", widget: "number", default: 0}
+      - {label: "Show on Homepage", name: "show_on_homepage", widget: "boolean", default: true}
+
+  # Site Settings (Pages)
+  - name: "pages"
+    label: "Site Pages"
+    files:
+      - label: "Homepage Settings"
+        name: "homepage"
+        file: "data/homepage.yml"
+        fields:
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Main Heading", name: "heading", widget: "string"}
+              - {label: "Subheading", name: "subheading", widget: "text"}
+              - {label: "Primary CTA Text", name: "cta_primary", widget: "string"}
+              - {label: "Primary CTA Link", name: "cta_primary_link", widget: "string"}
+              - {label: "Secondary CTA Text", name: "cta_secondary", widget: "string"}
+              - {label: "Hero Image", name: "hero_image", widget: "image", required: false}
+          - label: "Stats Section"
+            name: "stats"
+            widget: "list"
+            fields:
+              - {label: "Number", name: "number", widget: "string"}
+              - {label: "Label", name: "label", widget: "string"}
+          - label: "Features Section"
+            name: "features"
+            widget: "object"
+            fields:
+              - {label: "Section Title", name: "title", widget: "string"}
+              - label: "Feature Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Description", name: "description", widget: "text"}
+                  - {label: "Icon Color", name: "icon_color", widget: "select", options: ["blue", "orange", "green", "purple"]}
+          - label: "Call to Action"
+            name: "cta_section"
+            widget: "object"
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Subheading", name: "subheading", widget: "text"}
+              - {label: "Button Text", name: "button_text", widget: "string"}
+
+      - label: "About Page"
+        name: "about"
+        file: "content/about.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+
+      - label: "Contact Page"
+        name: "contact"
+        file: "content/contact.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Phone", name: "phone", widget: "string"}
+          - {label: "Address", name: "address", widget: "text"}

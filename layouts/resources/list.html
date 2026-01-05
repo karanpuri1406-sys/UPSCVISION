@@ -1,0 +1,87 @@
+{{ define "main" }}
+<!-- Resources Hero -->
+<section class="resources-hero">
+  <div class="container">
+    <h1>Content-Rich Learning</h1>
+    <h2>Read less. Retain more. Crack UPSC.</h2>
+    <p>Access comprehensive, streamlined study materials designed to maximize retention and minimize preparation time</p>
+    
+    <div class="search-bar">
+      <input type="text" class="search-input" placeholder="Search resources..." />
+      <i class="fas fa-search search-icon"></i>
+    </div>
+  </div>
+</section>
+
+<!-- Resource Types -->
+<section class="section">
+  <div class="container">
+    <div class="resource-types">
+      {{ range .Pages }}
+      {{ if not .Params.draft }}
+      <div class="resource-type-card">
+        <div class="resource-icon {{ .Params.icon_color }}">
+          {{ if eq .Params.type "Daily News" }}
+          <i class="fas fa-newspaper"></i>
+          {{ else if eq .Params.type "NCERT Notes" }}
+          <i class="fas fa-book"></i>
+          {{ else if eq .Params.type "Practice Tests" }}
+          <i class="fas fa-pen-to-square"></i>
+          {{ else if eq .Params.type "Answer Writing" }}
+          <i class="fas fa-pencil-alt"></i>
+          {{ else if eq .Params.type "Previous Papers" }}
+          <i class="fas fa-file-alt"></i>
+          {{ else if eq .Params.type "Short Films" }}
+          <i class="fas fa-film"></i>
+          {{ else }}
+          <i class="fas fa-graduation-cap"></i>
+          {{ end }}
+        </div>
+        <h3>{{ .Params.type }}</h3>
+        <p>{{ .Params.description }}</p>
+        {{ if .Params.link_url }}
+        <a href="{{ .Params.link_url }}" class="btn btn-primary btn-sm" style="margin-top: 1rem;">Access Now</a>
+        {{ else }}
+        <a href="{{ .Permalink }}" class="btn btn-primary btn-sm" style="margin-top: 1rem;">Learn More</a>
+        {{ end }}
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- Latest Analysis -->
+<section class="latest-analysis bg-light">
+  <div class="container">
+    <div class="section-header">
+      <h2>Latest Analysis & Updates</h2>
+      <p>Stay updated with current affairs and important news analysis</p>
+    </div>
+    
+    <div class="blog-grid">
+      {{ range first 6 (where .Site.RegularPages "Section" "blog") }}
+      <article class="blog-card">
+        {{ with .Params.featured_image }}
+        <img src="{{ . }}" alt="{{ $.Title }}" class="blog-image" />
+        {{ else }}
+        <div class="blog-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+        {{ end }}
+        <div class="blog-content">
+          <div class="blog-meta">
+            <span class="blog-category">{{ .Params.category }}</span>
+            <span>{{ .Date.Format "Jan 02, 2006" }}</span>
+          </div>
+          <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          <p class="blog-excerpt">{{ .Params.excerpt | default .Summary }}</p>
+          <a href="{{ .Permalink }}" class="read-more">
+            Read Full Analysis <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}

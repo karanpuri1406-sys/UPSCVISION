@@ -1,0 +1,157 @@
+{{ define "main" }}
+{{ $homepage := .Site.Data.homepage }}
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>{{ $homepage.hero.heading }}</h1>
+        <p>{{ $homepage.hero.subheading }}</p>
+        <div class="hero-buttons">
+          <a href="{{ $homepage.hero.cta_primary_link }}" class="btn btn-primary btn-lg">
+            {{ $homepage.hero.cta_primary }}
+          </a>
+          <a href="#video" class="btn btn-outline btn-lg">
+            <i class="fas fa-play"></i> {{ $homepage.hero.cta_secondary }}
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="/images/hero-illustration.svg" alt="UPSC Preparation" />
+        <div class="floating-card top-right">
+          <h4>India's Students</h4>
+          <div class="stat">1M+</div>
+          <div style="display: flex; gap: 0.25rem; margin-top: 0.5rem;">
+            <img src="/images/avatar1.jpg" alt="Student" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover;" />
+            <img src="/images/avatar2.jpg" alt="Student" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover;" />
+            <img src="/images/avatar3.jpg" alt="Student" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover;" />
+            <img src="/images/avatar4.jpg" alt="Student" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover;" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Bar -->
+<section class="stats-bar">
+  <div class="container">
+    <div class="stats-grid">
+      {{ range $homepage.stats }}
+      <div class="stat-item">
+        <h3>{{ .number }}</h3>
+        <p>{{ .label }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+  <div class="container">
+    <div class="section-header">
+      <h2>{{ $homepage.features.title }}</h2>
+    </div>
+    <div class="features-grid">
+      {{ range $homepage.features.items }}
+      <div class="feature-card">
+        <div class="feature-icon {{ .icon_color }}">
+          {{ if eq .icon_color "blue" }}
+          <i class="fas fa-chalkboard-teacher"></i>
+          {{ else if eq .icon_color "orange" }}
+          <i class="fas fa-brain"></i>
+          {{ else }}
+          <i class="fas fa-user-graduate"></i>
+          {{ end }}
+        </div>
+        <h3>{{ .title }}</h3>
+        <p>{{ .description }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- Premium Courses Section -->
+<section class="courses">
+  <div class="container">
+    <div class="section-title-row">
+      <h2>Premium Courses</h2>
+      <a href="/courses/" class="view-all-link">
+        View All Courses <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+    <div class="courses-grid">
+      {{ range first 6 (where .Site.RegularPages "Section" "courses") }}
+      <div class="course-card">
+        {{ with .Params.thumbnail }}
+        <img src="{{ . }}" alt="{{ $.Title }}" class="course-thumbnail" />
+        {{ else }}
+        <div class="course-thumbnail" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+        {{ end }}
+        <div class="course-content">
+          <span class="course-category">{{ .Params.category }}</span>
+          <h3>{{ .Title }}</h3>
+          <p>{{ .Params.description }}</p>
+          <div class="course-footer">
+            <div class="course-price">
+              ₹{{ .Params.price }}
+              {{ with .Params.duration }}<span> / {{ . }}</span>{{ end }}
+            </div>
+            <a href="{{ .Permalink }}" class="btn btn-primary btn-sm btn-enroll">Enroll</a>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section (Hall of Fame) -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <h2>Hall of Fame</h2>
+      <p>Success stories from our students who achieved their dream of becoming civil servants</p>
+    </div>
+    <div class="testimonials-grid">
+      {{ range first 3 (where .Site.RegularPages "Section" "testimonials") }}
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          {{ with .Params.photo }}
+          <img src="{{ . }}" alt="{{ $.Params.student_name }}" class="testimonial-photo" />
+          {{ end }}
+          <div class="testimonial-info">
+            <h4>{{ .Params.student_name }}</h4>
+            {{ with .Params.rank_achieved }}
+            <p class="testimonial-rank">{{ . }}</p>
+            {{ end }}
+          </div>
+        </div>
+        <div class="testimonial-rating">
+          {{ range seq .Params.rating }}
+          <i class="fas fa-star"></i>
+          {{ end }}
+        </div>
+        <p class="testimonial-text">"{{ .Params.review_text }}"</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="cta-section">
+  <div class="cta-content container">
+    <h2>{{ $homepage.cta_section.heading }}</h2>
+    <p>{{ $homepage.cta_section.subheading }}</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email address" required />
+      <button type="submit" class="btn btn-white btn-lg">{{ $homepage.cta_section.button_text }}</button>
+    </form>
+  </div>
+</section>
+
+{{ end }}

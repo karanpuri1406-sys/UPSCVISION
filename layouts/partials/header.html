@@ -1,0 +1,27 @@
+<header class="header">
+  <div class="container">
+    <nav class="navbar">
+      <a href="/" class="logo">
+        <i class="fas fa-graduation-cap"></i>
+        <span>UPSC Vision Prep</span>
+      </a>
+      
+      <button class="mobile-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      
+      <div class="nav-menu">
+        <ul class="nav-links">
+          {{ range .Site.Menus.main }}
+          <li><a href="{{ .URL }}" class="nav-link">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+        
+        <div class="nav-buttons">
+          <a href="#" class="btn btn-outline btn-sm">Log In</a>
+          <a href="/courses/" class="btn btn-primary btn-sm">Get Started</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>

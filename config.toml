@@ -2,7 +2,6 @@ baseURL = "https://upscvisionpreponline.com/"
 languageCode = "en-us"
 title = "UPSC Vision Prep - Master the Art of Civil Services"
 
-
 [params]
   description = "India's leading UPSC CSE preparation platform with expert faculty, adaptive testing, and comprehensive study materials."
   author = "UPSC Vision Prep"

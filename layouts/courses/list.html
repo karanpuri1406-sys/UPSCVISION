@@ -1,0 +1,53 @@
+{{ define "main" }}
+<section class="section bg-light">
+  <div class="container">
+    <div class="section-header">
+      <h1>Our Courses</h1>
+      <p>Comprehensive UPSC preparation courses designed by experts to help you succeed</p>
+    </div>
+    
+    <div class="courses-grid">
+      {{ range .Pages }}
+      {{ if not .Params.draft }}
+      <div class="course-card">
+        {{ with .Params.thumbnail }}
+        <img src="{{ . }}" alt="{{ $.Title }}" class="course-thumbnail" />
+        {{ else }}
+        <div class="course-thumbnail" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+        {{ end }}
+        <div class="course-content">
+          <span class="course-category">{{ .Params.category }}</span>
+          {{ with .Params.status }}
+          {{ if ne . "Ongoing" }}
+          <span class="course-category" style="background: var(--orange-accent); color: white; margin-left: 0.5rem;">{{ . }}</span>
+          {{ end }}
+          {{ end }}
+          <h3>{{ .Title }}</h3>
+          <p>{{ .Params.description }}</p>
+          
+          {{ with .Params.instructor }}
+          <p style="font-size: 0.9rem; color: var(--gray-600); margin-top: 1rem;">
+            <i class="fas fa-user"></i> <strong>Instructor:</strong> {{ . }}
+          </p>
+          {{ end }}
+          
+          {{ with .Params.duration }}
+          <p style="font-size: 0.9rem; color: var(--gray-600);">
+            <i class="fas fa-clock"></i> <strong>Duration:</strong> {{ . }}
+          </p>
+          {{ end }}
+          
+          <div class="course-footer">
+            <div class="course-price">
+              ₹{{ .Params.price }}
+            </div>
+            <a href="{{ .Permalink }}" class="btn btn-primary btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

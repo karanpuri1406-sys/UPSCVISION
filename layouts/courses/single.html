@@ -1,0 +1,94 @@
+{{ define "main" }}
+<article class="section">
+  <div class="container">
+    <div style="max-width: 900px; margin: 0 auto;">
+      {{ with .Params.thumbnail }}
+      <img src="{{ . }}" alt="{{ $.Title }}" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: var(--border-radius); margin-bottom: 2rem;" />
+      {{ end }}
+      
+      <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+        <span class="course-category">{{ .Params.category }}</span>
+        {{ with .Params.status }}
+        <span class="course-category" style="background: var(--orange-accent); color: white;">{{ . }}</span>
+        {{ end }}
+      </div>
+      
+      <h1>{{ .Title }}</h1>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0; padding: 2rem; background: var(--light-bg); border-radius: var(--border-radius);">
+        <div>
+          <p style="color: var(--gray-600); font-size: 0.9rem; margin-bottom: 0.25rem;">Price</p>
+          <p style="font-size: 1.75rem; font-weight: 700; color: var(--primary-blue);">₹{{ .Params.price }}</p>
+        </div>
+        {{ with .Params.instructor }}
+        <div>
+          <p style="color: var(--gray-600); font-size: 0.9rem; margin-bottom: 0.25rem;">Instructor</p>
+          <p style="font-weight: 600; color: var(--primary-navy);">{{ . }}</p>
+        </div>
+        {{ end }}
+        {{ with .Params.duration }}
+        <div>
+          <p style="color: var(--gray-600); font-size: 0.9rem; margin-bottom: 0.25rem;">Duration</p>
+          <p style="font-weight: 600; color: var(--primary-navy);">{{ . }}</p>
+        </div>
+        {{ end }}
+      </div>
+      
+      <div style="margin: 2rem 0;">
+        <a href="{{ .Params.enrollment_link | default "#" }}" class="btn btn-primary btn-lg" style="width: 100%; max-width: 300px; text-align: center;">
+          <i class="fas fa-check-circle"></i> Enroll Now
+        </a>
+      </div>
+      
+      <div style="margin-top: 3rem;">
+        <h2>About This Course</h2>
+        <div class="blog-body">
+          {{ .Content }}
+        </div>
+      </div>
+      
+      {{ with .Params.features }}
+      <div style="margin-top: 3rem;">
+        <h2>Key Features</h2>
+        <ul style="list-style: none; padding: 0;">
+          {{ range . }}
+          <li style="padding: 1rem; background: var(--light-bg); margin-bottom: 0.75rem; border-radius: var(--button-radius); display: flex; align-items: center; gap: 1rem;">
+            <i class="fas fa-check-circle" style="color: var(--green-accent); font-size: 1.25rem;"></i>
+            <span>{{ . }}</span>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+      
+      {{ with .Params.curriculum }}
+      <div style="margin-top: 3rem;">
+        <h2>Course Curriculum</h2>
+        {{ range . }}
+        <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: var(--white); border: 2px solid var(--gray-200); border-radius: var(--border-radius);">
+          <h3 style="color: var(--primary-blue); margin-bottom: 1rem;">{{ .module_title }}</h3>
+          <ul style="list-style: disc; margin-left: 1.5rem;">
+            {{ range .topics }}
+            <li style="color: var(--gray-700); margin-bottom: 0.5rem;">{{ . }}</li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+      
+      <div style="margin-top: 3rem; padding: 2rem; background: var(--light-bg); border-radius: var(--border-radius); text-align: center;">
+        <h3>Ready to Start Your Journey?</h3>
+        <p style="margin: 1rem 0;">Join thousands of successful UPSC aspirants</p>
+        <a href="{{ .Params.enrollment_link | default "#" }}" class="btn btn-primary btn-lg">
+          Enroll in This Course
+        </a>
+      </div>
+      
+      <div style="margin-top: 2rem; text-align: center;">
+        <a href="/courses/" class="btn btn-outline">← Back to All Courses</a>
+      </div>
+    </div>
+  </div>
+</article>
+{{ end }}
