@@ -1,54 +1,56 @@
 ---
-title: "Current Affairs Mastery 2025"
-slug: "current-affairs-mastery"
-thumbnail: "/uploads/current-affairs.jpg"
-description: "Comprehensive current affairs program with daily updates, monthly compilations, MCQ practice, and mains answer integration for complete UPSC preparation."
+title: Current Affairs Mastery 2025
+slug: current-affairs-mastery
+thumbnail: /uploads/slot-0-1767614921586.png
+description: Comprehensive current affairs program with daily updates, monthly
+  compilations, MCQ practice, and mains answer integration for complete UPSC
+  preparation.
 price: 6999
-instructor: "Expert Faculty Team"
-duration: "12 months"
-category: "Current Affairs"
-status: "Ongoing"
+instructor: Expert Faculty Team
+duration: 12 months
+category: Current Affairs
+status: Ongoing
+features:
+  - Daily news analysis (7 days a week)
+  - Monthly compilations with static linkage
+  - 1000+ MCQs monthly
+  - Weekly answer writing topics
+  - Issue-based thematic compilations
+  - Mind maps and infographics
+  - Mobile app access
+  - Previous year integration
+curriculum:
+  - module_title: Daily Coverage
+    topics:
+      - National news and policies
+      - International developments
+      - Economic indicators
+      - Science & technology updates
+      - Environment and ecology
+      - Art, culture, and sports
+  - module_title: Monthly Compilations
+    topics:
+      - Major events summary
+      - Static-current linkage
+      - Prelims-Mains relevance tags
+      - Timeline of events
+      - Issue-based grouping
+  - module_title: Weekly Practice
+    topics:
+      - 100+ MCQs every week
+      - Answer writing topics
+      - Previous year questions
+      - Discussion forum
+  - module_title: Special Editions
+    topics:
+      - Budget and Economic Survey analysis
+      - Summit and conference compilations
+      - Supreme Court judgments
+      - Government schemes deep-dive
+enrollment_link: "#"
 featured: true
 order: 3
 draft: false
-features:
-  - "Daily news analysis (7 days a week)"
-  - "Monthly compilations with static linkage"
-  - "1000+ MCQs monthly"
-  - "Weekly answer writing topics"
-  - "Issue-based thematic compilations"
-  - "Mind maps and infographics"
-  - "Mobile app access"
-  - "Previous year integration"
-curriculum:
-  - module_title: "Daily Coverage"
-    topics:
-      - "National news and policies"
-      - "International developments"
-      - "Economic indicators"
-      - "Science & technology updates"
-      - "Environment and ecology"
-      - "Art, culture, and sports"
-  - module_title: "Monthly Compilations"
-    topics:
-      - "Major events summary"
-      - "Static-current linkage"
-      - "Prelims-Mains relevance tags"
-      - "Timeline of events"
-      - "Issue-based grouping"
-  - module_title: "Weekly Practice"
-    topics:
-      - "100+ MCQs every week"
-      - "Answer writing topics"
-      - "Previous year questions"
-      - "Discussion forum"
-  - module_title: "Special Editions"
-    topics:
-      - "Budget and Economic Survey analysis"
-      - "Summit and conference compilations"
-      - "Supreme Court judgments"
-      - "Government schemes deep-dive"
-enrollment_link: "#"
 ---
 
 # Current Affairs Mastery 2025
