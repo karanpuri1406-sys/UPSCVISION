@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: karanpuri1406-sys/UPSCVISION
   branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
 
 # Uncomment for local testing
 # local_backend: true
