@@ -46,26 +46,54 @@
   </div>
 </section>
 
+<!-- Why Choose Section (New) -->
+{{ with $homepage.why_choose }}
+<section class="why-choose-section">
+  <div class="container">
+    <div class="section-header center">
+      <h2>{{ .title }}</h2>
+    </div>
+    <div class="why-choose-grid">
+      {{ range .items }}
+      <div class="why-choose-card">
+        <div class="why-icon">
+          <i class="fas fa-{{ .icon }}"></i>
+        </div>
+        <h3>{{ .title }}</h3>
+        <p>{{ .description }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
 <!-- Features Section -->
 <section class="features">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header center">
       <h2>{{ $homepage.features.title }}</h2>
+      {{ with $homepage.features.subtitle }}
+      <p class="section-subtitle">{{ . }}</p>
+      {{ end }}
     </div>
-    <div class="features-grid">
+    <div class="features-grid enhanced">
       {{ range $homepage.features.items }}
-      <div class="feature-card">
+      <div class="feature-card enhanced">
         <div class="feature-icon {{ .icon_color }}">
           {{ if eq .icon_color "blue" }}
-          <i class="fas fa-chalkboard-teacher"></i>
+          <i class="fas fa-user-tie"></i>
           {{ else if eq .icon_color "orange" }}
           <i class="fas fa-brain"></i>
           {{ else }}
-          <i class="fas fa-user-graduate"></i>
+          <i class="fas fa-globe"></i>
           {{ end }}
         </div>
         <h3>{{ .title }}</h3>
         <p>{{ .description }}</p>
+        <div class="feature-badge">
+          <i class="fas fa-check-circle"></i> Proven System
+        </div>
       </div>
       {{ end }}
     </div>
@@ -140,15 +168,56 @@
   </div>
 </section>
 
+<!-- Success Metrics Section (New) -->
+{{ with $homepage.success_metrics }}
+<section class="success-metrics">
+  <div class="container">
+    <div class="section-header center">
+      <h2>{{ .title }}</h2>
+    </div>
+    <div class="metrics-grid">
+      {{ range .items }}
+      <div class="metric-card">
+        <div class="metric-number">{{ .number }}</div>
+        <div class="metric-label">{{ .label }}</div>
+        <div class="metric-sublabel">{{ .sublabel }}</div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
 <!-- Call to Action Section -->
-<section class="cta-section">
+<section class="cta-section enhanced">
   <div class="cta-content container">
+    <div class="cta-badge">
+      <i class="fas fa-fire"></i> Limited Time Offer - 40% Off
+    </div>
     <h2>{{ $homepage.cta_section.heading }}</h2>
     <p>{{ $homepage.cta_section.subheading }}</p>
-    <form class="newsletter-form">
-      <input type="email" placeholder="Enter your email address" required />
-      <button type="submit" class="btn btn-white btn-lg">{{ $homepage.cta_section.button_text }}</button>
-    </form>
+    <div class="cta-buttons">
+      <a href="/courses/" class="btn btn-white btn-lg">
+        <i class="fas fa-rocket"></i> {{ $homepage.cta_section.button_text }}
+      </a>
+      <a href="/about/" class="btn btn-outline-white btn-lg">
+        <i class="fas fa-info-circle"></i> Learn More
+      </a>
+    </div>
+    <div class="cta-trust">
+      <div class="trust-item">
+        <i class="fas fa-shield-alt"></i>
+        <span>100% Money Back Guarantee</span>
+      </div>
+      <div class="trust-item">
+        <i class="fas fa-star"></i>
+        <span>4.9/5 Average Rating</span>
+      </div>
+      <div class="trust-item">
+        <i class="fas fa-users"></i>
+        <span>50,000+ Happy Students</span>
+      </div>
+    </div>
   </div>
 </section>
 
