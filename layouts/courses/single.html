@@ -1,93 +1,116 @@
 {{ define "main" }}
-<article class="section">
+<div class="page-header">
   <div class="container">
-    <div style="max-width: 900px; margin: 0 auto;">
-      {{ with .Params.thumbnail }}
-      <img src="{{ . }}" alt="{{ $.Title }}" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: var(--border-radius); margin-bottom: 2rem;" />
+    <div style="display: flex; gap: 1rem; margin-bottom: 1rem; justify-content: center; flex-wrap: wrap;">
+      <span class="course-category">{{ .Params.category }}</span>
+      {{ with .Params.status }}
+      <span class="course-category" style="background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); color: white;">{{ . }}</span>
       {{ end }}
-      
-      <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-        <span class="course-category">{{ .Params.category }}</span>
-        {{ with .Params.status }}
-        <span class="course-category" style="background: var(--orange-accent); color: white;">{{ . }}</span>
-        {{ end }}
+    </div>
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Params.description }}</p>
+  </div>
+</div>
+
+<article class="section">
+  <div class="container" style="max-width: 1000px;">
+    {{ with .Params.thumbnail }}
+    <img src="{{ . }}" alt="{{ $.Title }}" style="width: 100%; max-height: 450px; object-fit: cover; border-radius: var(--radius-xl); margin-bottom: 3rem; box-shadow: var(--shadow-2xl);" />
+    {{ end }}
+    
+    <!-- Course Info Cards -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+      <div style="background: white; padding: 2rem; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); text-align: center; border-top: 4px solid var(--primary-blue);">
+        <i class="fas fa-tag" style="font-size: 2rem; color: var(--primary-blue); margin-bottom: 1rem;"></i>
+        <p style="color: var(--gray-600); font-size: 0.875rem; margin-bottom: 0.5rem;">Price</p>
+        <p style="font-size: 2rem; font-weight: 700; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin: 0;">₹{{ .Params.price }}</p>
       </div>
-      
-      <h1>{{ .Title }}</h1>
-      
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0; padding: 2rem; background: var(--light-bg); border-radius: var(--border-radius);">
-        <div>
-          <p style="color: var(--gray-600); font-size: 0.9rem; margin-bottom: 0.25rem;">Price</p>
-          <p style="font-size: 1.75rem; font-weight: 700; color: var(--primary-blue);">₹{{ .Params.price }}</p>
-        </div>
-        {{ with .Params.instructor }}
-        <div>
-          <p style="color: var(--gray-600); font-size: 0.9rem; margin-bottom: 0.25rem;">Instructor</p>
-          <p style="font-weight: 600; color: var(--primary-navy);">{{ . }}</p>
-        </div>
-        {{ end }}
-        {{ with .Params.duration }}
-        <div>
-          <p style="color: var(--gray-600); font-size: 0.9rem; margin-bottom: 0.25rem;">Duration</p>
-          <p style="font-weight: 600; color: var(--primary-navy);">{{ . }}</p>
-        </div>
-        {{ end }}
-      </div>
-      
-      <div style="margin: 2rem 0;">
-        <a href="{{ .Params.enrollment_link | default "#" }}" class="btn btn-primary btn-lg" style="width: 100%; max-width: 300px; text-align: center;">
-          <i class="fas fa-check-circle"></i> Enroll Now
-        </a>
-      </div>
-      
-      <div style="margin-top: 3rem;">
-        <h2>About This Course</h2>
-        <div class="blog-body">
-          {{ .Content }}
-        </div>
-      </div>
-      
-      {{ with .Params.features }}
-      <div style="margin-top: 3rem;">
-        <h2>Key Features</h2>
-        <ul style="list-style: none; padding: 0;">
-          {{ range . }}
-          <li style="padding: 1rem; background: var(--light-bg); margin-bottom: 0.75rem; border-radius: var(--button-radius); display: flex; align-items: center; gap: 1rem;">
-            <i class="fas fa-check-circle" style="color: var(--green-accent); font-size: 1.25rem;"></i>
-            <span>{{ . }}</span>
-          </li>
-          {{ end }}
-        </ul>
+      {{ with .Params.instructor }}
+      <div style="background: white; padding: 2rem; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); text-align: center; border-top: 4px solid var(--accent-orange);">
+        <i class="fas fa-user-tie" style="font-size: 2rem; color: var(--accent-orange); margin-bottom: 1rem;"></i>
+        <p style="color: var(--gray-600); font-size: 0.875rem; margin-bottom: 0.5rem;">Instructor</p>
+        <p style="font-weight: 600; color: var(--gray-900); margin: 0;">{{ . }}</p>
       </div>
       {{ end }}
-      
-      {{ with .Params.curriculum }}
-      <div style="margin-top: 3rem;">
-        <h2>Course Curriculum</h2>
+      {{ with .Params.duration }}
+      <div style="background: white; padding: 2rem; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); text-align: center; border-top: 4px solid var(--success-green);">
+        <i class="fas fa-clock" style="font-size: 2rem; color: var(--success-green); margin-bottom: 1rem;"></i>
+        <p style="color: var(--gray-600); font-size: 0.875rem; margin-bottom: 0.5rem;">Duration</p>
+        <p style="font-weight: 600; color: var(--gray-900); margin: 0;">{{ . }}</p>
+      </div>
+      {{ end }}
+    </div>
+    
+    <!-- CTA Button -->
+    <div style="text-align: center; margin-bottom: 3rem;">
+      <a href="{{ .Params.enrollment_link | default "/contact/" }}" class="btn btn-primary btn-lg" style="min-width: 280px;">
+        <i class="fas fa-check-circle"></i> Enroll Now
+      </a>
+    </div>
+    
+    <!-- About Course -->
+    <div style="background: white; padding: 3rem; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); margin-bottom: 2rem;">
+      <h2 style="margin-bottom: 1.5rem; color: var(--gray-900);">About This Course</h2>
+      <div class="post-content">
+        {{ .Content }}
+      </div>
+    </div>
+    
+    <!-- Key Features -->
+    {{ with .Params.features }}
+    <div style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); padding: 3rem; border-radius: var(--radius-xl); margin-bottom: 2rem;">
+      <h2 style="margin-bottom: 2rem; text-align: center; color: var(--gray-900);">What You'll Get</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
         {{ range . }}
-        <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: var(--white); border: 2px solid var(--gray-200); border-radius: var(--border-radius);">
-          <h3 style="color: var(--primary-blue); margin-bottom: 1rem;">{{ .module_title }}</h3>
-          <ul style="list-style: disc; margin-left: 1.5rem;">
-            {{ range .topics }}
-            <li style="color: var(--gray-700); margin-bottom: 0.5rem;">{{ . }}</li>
-            {{ end }}
-          </ul>
+        <div style="background: white; padding: 1.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); display: flex; align-items: start; gap: 1rem; transition: all var(--transition-base);">
+          <i class="fas fa-check-circle" style="color: var(--success-green); font-size: 1.5rem; margin-top: 0.25rem; flex-shrink: 0;"></i>
+          <span style="color: var(--gray-700); line-height: 1.7;">{{ . }}</span>
         </div>
         {{ end }}
       </div>
-      {{ end }}
-      
-      <div style="margin-top: 3rem; padding: 2rem; background: var(--light-bg); border-radius: var(--border-radius); text-align: center;">
-        <h3>Ready to Start Your Journey?</h3>
-        <p style="margin: 1rem 0;">Join thousands of successful UPSC aspirants</p>
-        <a href="{{ .Params.enrollment_link | default "#" }}" class="btn btn-primary btn-lg">
-          Enroll in This Course
-        </a>
+    </div>
+    {{ end }}
+    
+    <!-- Curriculum -->
+    {{ with .Params.curriculum }}
+    <div style="background: white; padding: 3rem; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); margin-bottom: 2rem;">
+      <h2 style="margin-bottom: 2rem; color: var(--gray-900);">Course Curriculum</h2>
+      <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+        {{ range $index, $module := . }}
+        <div style="border: 2px solid var(--gray-200); border-radius: var(--radius-lg); overflow: hidden; transition: all var(--transition-base);">
+          <div style="background: var(--gradient-primary); padding: 1.5rem; color: white;">
+            <h3 style="margin: 0; color: white; display: flex; align-items: center; gap: 1rem;">
+              <span style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: rgba(255,255,255,0.2); border-radius: 50%; font-size: 1.125rem; font-weight: 700;">{{ add $index 1 }}</span>
+              {{ .module_title }}
+            </h3>
+          </div>
+          <div style="padding: 1.5rem; background: white;">
+            <ul style="list-style: none; padding: 0; margin: 0;">
+              {{ range .topics }}
+              <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--gray-100); display: flex; align-items: center; gap: 0.75rem;">
+                <i class="fas fa-book-reader" style="color: var(--primary-blue); font-size: 0.875rem;"></i>
+                <span style="color: var(--gray-700);">{{ . }}</span>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+        {{ end }}
       </div>
-      
-      <div style="margin-top: 2rem; text-align: center;">
-        <a href="/courses/" class="btn btn-outline">← Back to All Courses</a>
-      </div>
+    </div>
+    {{ end }}
+    
+    <!-- Final CTA -->
+    <div style="background: var(--gradient-primary); padding: 3rem; border-radius: var(--radius-xl); text-align: center; color: white; box-shadow: var(--shadow-2xl); margin-bottom: 2rem;">
+      <h3 style="color: white; margin-bottom: 1rem; font-size: 2rem;">Ready to Start Your Journey?</h3>
+      <p style="color: rgba(255,255,255,0.95); margin-bottom: 2rem; font-size: 1.125rem;">Join thousands of successful UPSC aspirants who have achieved their dreams</p>
+      <a href="{{ .Params.enrollment_link | default "/contact/" }}" class="btn btn-white btn-lg">
+        <i class="fas fa-rocket"></i> Enroll in This Course
+      </a>
+    </div>
+    
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="/courses/" class="btn btn-outline"><i class="fas fa-arrow-left"></i> Back to All Courses</a>
     </div>
   </div>
 </article>

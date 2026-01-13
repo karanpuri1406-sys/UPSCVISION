@@ -1,26 +1,32 @@
 {{ define "main" }}
+<div class="page-header">
+  <div class="container">
+    <h1>Latest Articles & Updates</h1>
+    <p>Expert insights, study tips, and current affairs analysis for UPSC preparation</p>
+  </div>
+</div>
+
 <section class="section">
   <div class="container">
-    <div class="section-header">
-      <h1>Latest Articles & Updates</h1>
-      <p>Expert insights, study tips, and current affairs analysis for UPSC preparation</p>
-    </div>
-    
     <div class="blog-grid">
       {{ range .Pages }}
       {{ if not .Params.draft }}
       <article class="blog-card">
-        {{ with .Params.featured_image }}
-        <img src="{{ . }}" alt="{{ $.Title }}" class="blog-image" />
-        {{ else }}
-        <div class="blog-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
-        {{ end }}
+        <div style="overflow: hidden; border-radius: 1rem 1rem 0 0;">
+          {{ with .Params.featured_image }}
+          <img src="{{ . }}" alt="{{ $.Title }}" class="blog-thumbnail" />
+          {{ else }}
+          <div class="blog-thumbnail" style="background: linear-gradient(135deg, #2563eb 0%, #8b5cf6 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
+            <i class="fas fa-newspaper"></i>
+          </div>
+          {{ end }}
+        </div>
         <div class="blog-content">
           <div class="blog-meta">
             <span class="blog-category">{{ .Params.category }}</span>
-            <span>{{ .Date.Format "Jan 02, 2006" }}</span>
+            <span style="color: var(--gray-500);"><i class="far fa-calendar"></i> {{ .Date.Format "Jan 02, 2006" }}</span>
           </div>
-          <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          <h3><a href="{{ .Permalink }}" style="color: var(--gray-900); text-decoration: none;">{{ .Title }}</a></h3>
           <p class="blog-excerpt">{{ .Params.excerpt | default .Summary }}</p>
           <a href="{{ .Permalink }}" class="read-more">
             Read Full Article <i class="fas fa-arrow-right"></i>

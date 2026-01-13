@@ -1,36 +1,38 @@
 {{ define "main" }}
-<article class="section">
-  <div class="blog-single container">
-    <div class="blog-header">
-      <div class="blog-meta">
-        <span class="blog-category">{{ .Params.category }}</span>
-        <span>{{ .Date.Format "January 02, 2006" }}</span>
+<article class="blog-post">
+  <div class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
+    <div class="post-header">
+      <h1 class="post-title">{{ .Title }}</h1>
+      <div class="post-meta">
+        <span><i class="fas fa-folder" style="color: var(--primary-blue);"></i> {{ .Params.category }}</span>
+        <span><i class="far fa-calendar" style="color: var(--primary-blue);"></i> {{ .Date.Format "January 02, 2006" }}</span>
         {{ with .Params.author }}
-        <span>by {{ . }}</span>
+        <span><i class="fas fa-user" style="color: var(--primary-blue);"></i> {{ . }}</span>
         {{ end }}
       </div>
-      <h1>{{ .Title }}</h1>
     </div>
     
     {{ with .Params.featured_image }}
-    <img src="{{ . }}" alt="{{ $.Title }}" class="blog-featured-image" />
+    <img src="{{ . }}" alt="{{ $.Title }}" class="post-featured-image" />
     {{ end }}
     
-    <div class="blog-body">
+    <div class="post-content">
       {{ .Content }}
     </div>
     
     {{ with .Params.tags }}
-    <div class="blog-tags" style="margin-top: 3rem;">
-      <strong>Tags:</strong>
-      {{ range . }}
-      <span style="display: inline-block; background: var(--light-bg); padding: 0.5rem 1rem; border-radius: 20px; margin: 0.5rem 0.25rem; font-size: 0.9rem;">{{ . }}</span>
-      {{ end }}
+    <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--gray-200);">
+      <h4 style="margin-bottom: 1rem; color: var(--gray-700); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em;">Related Topics</h4>
+      <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+        {{ range . }}
+        <span style="display: inline-block; background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); color: var(--primary-blue); padding: 0.5rem 1rem; border-radius: var(--radius-full); font-size: 0.875rem; font-weight: 600;">{{ . }}</span>
+        {{ end }}
+      </div>
     </div>
     {{ end }}
     
-    <div style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--gray-200); text-align: center;">
-      <a href="/blog/" class="btn btn-outline">← Back to All Articles</a>
+    <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--gray-200); text-align: center;">
+      <a href="/blog/" class="btn btn-outline"><i class="fas fa-arrow-left"></i> Back to All Articles</a>
     </div>
   </div>
 </article>

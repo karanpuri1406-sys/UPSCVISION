@@ -1,47 +1,50 @@
 {{ define "main" }}
+<div class="page-header">
+  <div class="container">
+    <h1>Our Premium Courses</h1>
+    <p>Comprehensive UPSC preparation courses designed by IAS officers and toppers to help you succeed</p>
+  </div>
+</div>
+
 <section class="section bg-light">
   <div class="container">
-    <div class="section-header">
-      <h1>Our Courses</h1>
-      <p>Comprehensive UPSC preparation courses designed by experts to help you succeed</p>
-    </div>
-    
     <div class="courses-grid">
       {{ range .Pages }}
       {{ if not .Params.draft }}
       <div class="course-card">
-        {{ with .Params.thumbnail }}
-        <img src="{{ . }}" alt="{{ $.Title }}" class="course-thumbnail" />
-        {{ else }}
-        <div class="course-thumbnail" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
-        {{ end }}
+        <div style="overflow: hidden;">
+          {{ with .Params.thumbnail }}
+          <img src="{{ . }}" alt="{{ $.Title }}" class="course-thumbnail" />
+          {{ else }}
+          <div class="course-thumbnail" style="background: linear-gradient(135deg, #2563eb 0%, #8b5cf6 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 4rem;">
+            <i class="fas fa-book-open"></i>
+          </div>
+          {{ end }}
+        </div>
         <div class="course-content">
           <span class="course-category">{{ .Params.category }}</span>
           {{ with .Params.status }}
           {{ if ne . "Ongoing" }}
-          <span class="course-category" style="background: var(--orange-accent); color: white; margin-left: 0.5rem;">{{ . }}</span>
+          <span class="course-category" style="background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); color: white; margin-left: 0.5rem;">{{ . }}</span>
           {{ end }}
           {{ end }}
           <h3>{{ .Title }}</h3>
           <p>{{ .Params.description }}</p>
           
-          {{ with .Params.instructor }}
-          <p style="font-size: 0.9rem; color: var(--gray-600); margin-top: 1rem;">
-            <i class="fas fa-user"></i> <strong>Instructor:</strong> {{ . }}
-          </p>
-          {{ end }}
-          
-          {{ with .Params.duration }}
-          <p style="font-size: 0.9rem; color: var(--gray-600);">
-            <i class="fas fa-clock"></i> <strong>Duration:</strong> {{ . }}
-          </p>
-          {{ end }}
+          <div style="display: flex; gap: 1.5rem; margin-top: 1rem; font-size: 0.875rem; color: var(--gray-600);">
+            {{ with .Params.instructor }}
+            <span><i class="fas fa-user-tie" style="color: var(--primary-blue);"></i> {{ . }}</span>
+            {{ end }}
+            {{ with .Params.duration }}
+            <span><i class="fas fa-clock" style="color: var(--primary-blue);"></i> {{ . }}</span>
+            {{ end }}
+          </div>
           
           <div class="course-footer">
             <div class="course-price">
               ₹{{ .Params.price }}
             </div>
-            <a href="{{ .Permalink }}" class="btn btn-primary btn-sm">View Details</a>
+            <a href="{{ .Permalink }}" class="btn btn-primary btn-sm btn-enroll">View Details</a>
           </div>
         </div>
       </div>
