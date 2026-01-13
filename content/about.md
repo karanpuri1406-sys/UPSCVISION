@@ -1,323 +1,173 @@
 ---
-title: "About UPSC Vision Prep - India's Premier UPSC CSE Coaching Platform"
-description: "Learn about UPSC Vision Prep - India's most trusted online UPSC coaching platform with 500+ civil service selections, expert IAS mentors, and comprehensive study materials for Prelims, Mains, and Interview preparation."
+title: "About UPSC Vision Prep - Expert UPSC Coaching Online"
+description: "Meet our expert team of UPSC mentors and learn about UPSC Vision Prep's comprehensive coaching programs for Prelims, Mains, and Interview preparation."
 ---
 
 # About UPSC Vision Prep
 
-## Transforming UPSC Dreams into Reality Since 2020
+## Transforming UPSC Dreams into Reality
 
-<div class="about-intro">
+**UPSC Vision Prep Online** is a dedicated UPSC coaching platform committed to guiding aspirants through every stage of their civil services journey. Our approach is built on clarity, structure, and exam-oriented mentoring—helping students avoid common preparation traps and focus on what truly matters.
 
-**UPSC Vision Prep** is India's fastest-growing online UPSC Civil Services Examination preparation platform, trusted by over **50,000 aspirants** nationwide. Founded by IAS officers and UPSC toppers, we've helped **500+ students** achieve their dream of joining the civil services.
+---
 
-Our mission is simple yet powerful: **Democratize elite UPSC education** by making world-class coaching, personalized mentorship, and cutting-edge technology accessible to every aspirant, regardless of their location, language, or economic background.
+## Our Expert Team
+
+Meet the dedicated individuals driving your UPSC success at UPSC Vision Prep Online.
+
+<div class="team-section">
+
+<div class="team-grid">
+
+<div class="team-member">
+  <div class="team-photo">
+    <img src="/uploads/team-abhishek.jpg" alt="Abhishek Jain - UPSC Mentor" />
+  </div>
+  <div class="team-info">
+    <h3>Abhishek Jain</h3>
+    <p class="team-role">Aptitude, Reasoning & Core GS Subjects</p>
+    <p class="team-bio">Abhishek Jain focuses on building strong analytical foundations through structured reasoning and clarity-driven teaching. His work in Aptitude and Reasoning helps aspirants develop logical consistency rather than rely on shortcuts. Through multiple exam cycles, he has guided students to approach <strong>Polity, Modern History, and Geography</strong> with conceptual depth, interlinking, and real-world relevance—skills essential for eliminating errors in both Prelims and Mains.</p>
+  </div>
+</div>
+
+<div class="team-member">
+  <div class="team-photo">
+    <img src="/uploads/team-suhavani.png" alt="Suhavani Bhullar - UPSC Mentor" />
+  </div>
+  <div class="team-info">
+    <h3>Suhavani Bhullar</h3>
+    <p class="team-role">Polity, History & Current Affairs</p>
+    <p class="team-bio">Suhavani Bhullar mentors UPSC aspirants with a disciplined, exam-oriented approach rooted in constitutional values, governance, and global affairs. With experience across several UPSC cycles, she emphasizes conceptual clarity, analytical depth, and precise answer-writing aligned with evolving UPSC demands. Her structured mentoring helps students avoid over-preparation and focus on what the exam actually rewards.</p>
+  </div>
+</div>
+
+<div class="team-member">
+  <div class="team-photo">
+    <img src="/uploads/team-daman.png" alt="Dr. Daman Benipal - UPSC Mentor" />
+  </div>
+  <div class="team-info">
+    <h3>Dr. Daman Benipal</h3>
+    <p class="team-role">Geography, Environment, Science & Current Affairs</p>
+    <p class="team-bio">Dr. Daman Benipal is a BDS graduate with <strong>8+ years of experience</strong> mentoring civil services aspirants. She teaches Geography & Environment, Science, and Current Affairs with a strong focus on conceptual clarity and exam applicability. Over the years, she has helped students integrate static concepts with current developments, reducing confusion and improving retention for Prelims and Mains.</p>
+  </div>
+</div>
+
+<div class="team-member">
+  <div class="team-photo">
+    <img src="/uploads/team-priyanka.png" alt="Priyanka Dhillon - UPSC Mentor" />
+  </div>
+  <div class="team-info">
+    <h3>Priyanka Dhillon</h3>
+    <p class="team-role">Polity, Economy, Public Administration & Law Optional</p>
+    <p class="team-bio">Priyanka Dhillon brings over <strong>a decade of experience</strong> mentoring UPSC and State PCS aspirants across multiple exam cycles. With a strong legal background, she specializes in Indian Polity, Indian Economy, Public Administration (Optional), and Law Optional. Having guided <strong>1,000+ aspirants</strong>, she is known for helping students avoid common preparation traps and build structured, exam-aligned answers with confidence.</p>
+  </div>
+</div>
+
+<div class="team-member">
+  <div class="team-photo">
+    <img src="/uploads/team-aliya.png" alt="Aliya Nazakat - UPSC Mentor" />
+  </div>
+  <div class="team-info">
+    <h3>Aliya Nazakat</h3>
+    <p class="team-role">History, Political Science & Sociology</p>
+    <p class="team-bio">Aliya Nazakat teaches History, Political Science, and Sociology to CBSE Class 11 & 12 students and UPSC aspirants. Through years of classroom and competitive exam mentoring, she focuses on simplifying complex ideas and connecting theory with real-world contexts. Her approach helps students move beyond memorization and develop clarity, curiosity, and long-term understanding essential for both board exams and UPSC preparation.</p>
+  </div>
+</div>
+
+</div>
 
 </div>
 
 ---
 
-## Our Journey: From Vision to Reality
+## Our Comprehensive UPSC Programs
 
-In 2020, a group of serving IAS officers and UPSC toppers identified a critical gap in India's UPSC preparation landscape. While metro cities had access to top coaching institutes, millions of aspirants in Tier 2, Tier 3 cities, and rural areas struggled with outdated materials, limited guidance, and prohibitive costs.
+We offer three carefully designed programs to meet aspirants at different stages of their UPSC journey.
 
-**UPSC Vision Prep was born from this realization** – to build a platform that combines:
-- ✅ **Elite coaching quality** of top Delhi institutes
-- ✅ **Affordability** accessible to every student
-- ✅ **Technology-driven personalization** through AI
-- ✅ **Comprehensive coverage** from Prelims to Interview
+<div class="programs-section">
 
-Today, we're proud to be the **#1 rated UPSC platform** with students from **650+ districts** across India.
+<div class="program-card foundation">
+  <div class="program-icon">📚</div>
+  <h3>Foundation Program</h3>
+  <p class="program-tagline">Build the right base before the race begins.</p>
+  <p class="program-description">This program is designed for aspirants who want to start their UPSC preparation the right way. It focuses on building strong conceptual foundations across core General Studies subjects, helping you understand the syllabus clearly and avoid early-stage mistakes that cost years later.</p>
+  <p class="program-suited"><strong>Best suited for:</strong> First-time aspirants and repeaters who feel their basics are weak or unstructured.</p>
+  <a href="/contact/" class="btn btn-primary">Talk to a Counsellor</a>
+</div>
 
----
+<div class="program-card advanced">
+  <div class="program-icon">🎯</div>
+  <h3>Advanced Program</h3>
+  <p class="program-tagline">From understanding the syllabus to mastering the exam.</p>
+  <p class="program-description">This program is meant for aspirants who are familiar with the UPSC syllabus but struggle to convert preparation into marks. It focuses on exam-oriented thinking, integrating static subjects with current affairs, and aligning preparation with actual UPSC demand.</p>
+  <p class="program-suited"><strong>Best suited for:</strong> Aspirants who have studied before but feel stuck, directionless, or overwhelmed.</p>
+  <a href="/contact/" class="btn btn-primary">Get Expert Guidance</a>
+</div>
 
-## What Makes Us Different: The UPSC Vision Prep Advantage
-
-### 🎯 IAS Officers as Your Mentors
-
-Unlike traditional coaching platforms, **our faculty includes serving and retired IAS/IPS officers** who've been through the same journey you're about to embark on. They don't just teach theory – they share:
-
-- **Real UPSC interview experiences** and insider strategies
-- **Administrative perspectives** that help in Mains answers
-- **Personalized career roadmaps** based on your profile
-- **DAF (Detailed Application Form) guidance** for personality test
-- **Life after selection** – what actually happens in civil services
-
-*Our lead mentors include IAS 2015 Rank 3, IPS 2017 Rank 12, and IRS 2018 Rank 8.*
-
-### 🤖 AI-Powered Adaptive Learning Platform
-
-We've invested ₹2 crore in developing **India's most advanced adaptive testing engine** for UPSC. Here's what makes it revolutionary:
-
-**Intelligent Question Selection**
-- Analyzes your performance across 25+ parameters
-- Identifies weak topics with 95% accuracy
-- Generates personalized test series targeting your gaps
-- Adapts difficulty based on your improvement
-
-**Predictive Analytics**
-- Forecasts your expected Prelims score
-- Identifies high-yield topics for Mains
-- Tracks learning velocity and suggests optimizations
-- Compares your progress with top rankers
-
-**Result**: Students using our adaptive platform score **35-40 marks higher** in Prelims compared to traditional methods.
-
-### 📚 Most Comprehensive Study Materials
-
-Our content team of **50+ subject experts** creates the most exhaustive UPSC study materials:
-
-**For Prelims:**
-- 15,000+ practice MCQs with detailed explanations
-- Topic-wise concept notes covering entire syllabus
-- Last 25 years' PYQ analysis with trend identification
-- Monthly current affairs integration with static subjects
-
-**For Mains:**
-- 200+ model answers evaluated by UPSC standards
-- Daily answer writing practice with expert feedback
-- GS Papers 1-4 comprehensive notes
-- Optional subjects covered (15 subjects available)
-
-**For Interview:**
-- 100+ mock interviews by former UPSC board members
-- DAF-based personalized question banks
-- Contemporary issues discussion groups
-- Personality development workshops
-
-### 🎓 Proven Track Record of Success
-
-**Numbers That Speak:**
-
-<div class="stats-showcase">
-
-| Metric | Achievement |
-|--------|-------------|
-| **Total Selections** | 500+ in Civil Services |
-| **Top 100 Rankers** | 35+ students (2020-2024) |
-| **Average Score Improvement** | 38 marks in Prelims |
-| **Student Satisfaction** | 4.9/5 (12,000+ reviews) |
-| **Course Completion Rate** | 87% (Industry avg: 15%) |
+<div class="program-card mentorship">
+  <div class="program-icon">🤝</div>
+  <h3>Mentorship Program</h3>
+  <p class="program-tagline">Because serious preparation needs personal guidance.</p>
+  <p class="program-description">This program is for committed aspirants who don't need more content, but sharper strategy and feedback. It focuses on personalised mentorship, answer evaluation, attempt planning, and continuous course correction to help you avoid common high-stakes errors.</p>
+  <p class="program-suited"><strong>Best suited for:</strong> Serious aspirants preparing for an upcoming attempt who want focused guidance.</p>
+  <a href="/contact/" class="btn btn-primary">Book a Counselling Session</a>
+</div>
 
 </div>
 
-**Notable Successes:**
-- **AIR 12** - Priya Sharma (First Attempt, Working Professional)
-- **AIR 45** - Rahul Verma (Second Attempt, Hindi Medium)
-- **AIR 78** - Ankit Singh (Rural Background, English Optional)
-
-### 🌐 Technology Meets Tradition
-
-We believe in blending **time-tested UPSC preparation strategies** with **modern educational technology**:
-
-**Digital Learning Features:**
-- 📱 Mobile app with offline access
-- 🎥 1,200+ hours of HD video lectures
-- 📊 Real-time progress tracking dashboard
-- 💬 24/7 doubt clearing forum
-- 🔔 Smart reminders and study planner
-- 🏆 Gamified learning with badges
-
-**Traditional Strengths:**
-- 📖 Detailed printed notes (optional)
-- ✍️ Regular answer writing practice
-- 👥 Live classroom experience
-- 🗣️ Discussion forums and study groups
-- 📞 Personal mentorship calls
-
 ---
 
-## Our Core Values: The Foundation of Excellence
+## Why Choose UPSC Vision Prep Online?
 
-### 🏆 Excellence Without Compromise
+### 🎓 Expert Faculty with Real Exam Experience
+Our team consists of experienced educators who have mentored thousands of aspirants across multiple UPSC cycles. They understand the exam's evolving demands and help students build preparation that actually converts into marks.
 
-We maintain the **highest quality standards** in everything we do:
-- Faculty selected after rigorous screening (98% rejection rate)
-- Content reviewed by 3 subject experts before publishing
-- Technology tested by 500+ beta users before launch
-- Student support response time under 2 hours
+### 📚 Structured, Exam-Oriented Approach
+We don't believe in information overload. Our programs are designed to give you exactly what you need—no more, no less—helping you avoid the common trap of over-preparation that leads to confusion.
 
-### 💡 Innovation in Education
+### 💡 Conceptual Clarity Over Cramming
+We focus on building deep understanding rather than surface-level memorization. This approach helps in both Prelims (conceptual MCQs) and Mains (analytical writing).
 
-UPSC preparation hasn't changed in 30 years. **We're changing that**:
-- First to introduce AI-powered adaptive testing for UPSC
-- Pioneered mobile-first learning for aspirants
-- Created India's largest UPSC question bank
-- Developed proprietary answer evaluation algorithm
+### 🔄 Integration of Static & Current Affairs
+One of the biggest challenges for UPSC aspirants is connecting static knowledge with current developments. Our faculty specializes in this integration, making revision more effective and answers more relevant.
 
-### 🤝 Integrity and Transparency
+### ✍️ Answer Writing & Feedback
+Regular answer writing practice with personalized feedback ensures you're not just learning, but learning to express what you know in a way that earns marks.
 
-**No false promises, no misleading claims**:
-- We publish actual selection rates (not inflated numbers)
-- Clear refund policy with no hidden clauses
-- Honest assessment of student's preparation level
-- Transparent pricing with no surprise fees
-
-### 🌍 Accessibility for All
-
-**Education should never be a privilege**:
-- Scholarships for economically disadvantaged students
-- Regional language support (Hindi, Tamil, Telugu, Malayalam)
-- Special batches for working professionals
-- EMI options starting at ₹999/month
-
----
-
-## Our Team: The Minds Behind Your Success
-
-### Faculty Team (30+ Experts)
-- **5 IAS/IPS Officers** (Serving & Retired)
-- **10 UPSC CSE Qualifiers** (AIR under 100)
-- **15 Subject Matter Experts** (PhD holders)
-- **10 Guest Lecturers** (Policy experts, Bureaucrats)
-
-### Technology Team (20+ Engineers)
-- IIT/NIT graduates specializing in AI/ML
-- EdTech product managers from top companies
-- UX designers ensuring seamless learning experience
-
-### Content Team (50+ Writers)
-- Daily news analysis writers
-- Current affairs researchers
-- Answer writing evaluators
-- Video script writers
-
-### Student Support Team (40+ Members)
-- Available 24/7 for doubt clearing
-- Personal mentors assigned to each student
-- Technical support for platform issues
-- Career counselors for strategy sessions
-
----
-
-## Student Success Stories: Real People, Real Results
-
-### Priya Sharma - AIR 12, IAS 2023
-
-> *"Coming from a small town in Rajasthan, I never thought I could compete with Delhi coaching students. UPSC Vision Prep changed everything. The quality of teaching, especially Dr. Kumar's History classes and the AI-powered test series, helped me score 180+ in Prelims on my first attempt. The mock interviews prepared me so well that I faced zero nervousness on the actual day."*
-
-**Key Success Factors:**
-- Scored 186/200 in Prelims GS
-- Improved Mains writing from average to excellent
-- Mock interview feedback helped immensely
-
-### Rahul Verma - IPS 2023
-
-> *"As a working professional, flexibility was my biggest challenge. The recorded lectures, weekend batches, and mobile app allowed me to study during my commute and breaks. The faculty's support was incredible – they extended doubt-clearing sessions just for working professionals like me."*
-
-**Key Success Factors:**
-- Balanced full-time job with preparation
-- Completed entire syllabus in 10 months
-- Personal mentor helped optimize study schedule
-
----
-
-## Join the UPSC Vision Prep Family
-
-### 50,000+ Aspirants Trust Us
-
-When you join UPSC Vision Prep, you become part of a **vibrant community** of like-minded aspirants, mentors, and successful civil servants:
-
-**Student Community Benefits:**
-- 📱 **WhatsApp Study Groups**: Subject-wise discussions
-- 🎙️ **Weekly Webinars**: Current affairs and strategy sessions
-- 📚 **Peer Study Circles**: Connect with serious aspirants
-- 🏆 **Success Stories**: Get inspired by selections
-- 🤝 **Alumni Network**: Guidance from serving officers
-
-**Beyond Preparation:**
-- Post-selection training and guidance
-- Academy preparation tips from IAS officers
-- Career development workshops
-- Foundation training insights
+### 📞 Continuous Mentoring Support
+UPSC preparation is a long journey with many decision points. Our mentors provide ongoing guidance to help you stay on track, adjust strategies, and avoid costly mistakes.
 
 ---
 
 ## Our Commitment to You
 
-### 100% Money-Back Guarantee
+At UPSC Vision Prep Online, we believe that **smart work beats hard work**, and the right guidance can save you years of trial and error. Our goal is not just to teach you subjects, but to help you think like the exam expects, write like a topper, and stay consistent like a winner.
 
-We're so confident in our platform that we offer:
-- **7-day free trial** – Experience everything before paying
-- **30-day money-back guarantee** – No questions asked
-- **Satisfaction guaranteed** – 95%+ students renew
-
-### Continuous Improvement
-
-**We're always evolving** based on your feedback:
-- Monthly feature updates based on student suggestions
-- Quarterly syllabus alignment with UPSC changes
-- Regular faculty training programs
-- Annual curriculum overhaul
+Whether you're starting fresh or refining your preparation, we're here to guide you every step of the way.
 
 ---
 
-## Awards and Recognition
+## Ready to Begin Your UPSC Journey?
 
-<div class="awards-section">
+Join our expert-led programs and experience the difference that structured, exam-focused preparation can make.
 
-- 🏆 **Best EdTech Platform 2023** - Education World Awards
-- ⭐ **#1 UPSC App** - Google Play Store (4.8 rating, 100k+ downloads)
-- 🌟 **Student Choice Award 2024** - Careers360
-- 📱 **Best Mobile Learning App** - EdTech India Awards
-
-</div>
-
----
-
-## Media Coverage
-
-Our innovative approach has been featured in:
-- The Hindu
-- Indian Express  
-- NDTV Education
-- Times of India
-- Your Story (Startup feature)
-
----
-
-## Ready to Begin Your Journey?
-
-Join **India's most trusted UPSC preparation platform** and get access to:
-
-✅ **1,200+ hours** of expert video lectures  
-✅ **15,000+ practice questions** with solutions  
-✅ **Daily current affairs** and monthly magazines  
-✅ **AI-powered adaptive** test series  
-✅ **Personal mentorship** from IAS officers  
-✅ **Mock interviews** by UPSC board members  
-✅ **24/7 doubt clearing** support  
-✅ **Mobile app** with offline access  
-
-### Limited Time Offer: 40% Discount + Free Mock Interview Sessions
-
-**Your journey to civil services starts here. Take the first step today!**
-
-<div class="cta-box">
-
-[🚀 **Start Free Trial**](/courses/) | [📞 **Talk to Counselor**](/contact/) | [📖 **Download Syllabus**](/resources/)
-
+<div class="cta-buttons-about">
+  <a href="/courses/" class="btn btn-primary btn-lg">Explore Our Programs</a>
+  <a href="/contact/" class="btn btn-outline btn-lg">Schedule a Free Counselling</a>
 </div>
 
 ---
 
 ## Contact Us
 
-**Corporate Office:**  
-UPSC Vision Prep  
-Tower B, 5th Floor, Cyber City  
-Gurugram, Haryana - 122002
-
-**Phone:** +91 98765 43210  
 **Email:** info@upscvisionpreponline.com  
+**Phone:** +91 98765 43210  
 **WhatsApp:** +91 98765 43210
 
 **Office Hours:**  
-Monday - Saturday: 9:00 AM - 8:00 PM  
-Sunday: 10:00 AM - 6:00 PM
+Monday - Saturday: 9:00 AM - 8:00 PM IST  
+Sunday: 10:00 AM - 6:00 PM IST
 
 ---
 
-*UPSC Vision Prep - Where Dreams Meet Preparation*
-
-**#MakeItHappen #IASJourney #UPSCVisionPrep**
+*UPSC Vision Prep Online - Where Clarity Meets Success*
