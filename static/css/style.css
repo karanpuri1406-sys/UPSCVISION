@@ -2169,3 +2169,64 @@ p {
     width: 100%;
   }
 }
+
+/* ===========================
+   Page Content Wrapper Fixes
+   =========================== */
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-content {
+  width: 100%;
+}
+
+.page-content h1,
+.page-content h2,
+.page-content h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.page-content h2 {
+  border-bottom: 3px solid var(--primary-blue);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.page-content hr {
+  border: none;
+  border-top: 2px solid var(--gray-200);
+  margin: 3rem 0;
+}
+
+/* Fix for lists in markdown */
+.page-content ul:not(.social-links) {
+  list-style: disc;
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.page-content ul:not(.social-links) li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+}
+
+/* Ensure proper spacing */
+.page-content > * + * {
+  margin-top: 1rem;
+}
+
+.page-content > h2 + * {
+  margin-top: 1.5rem;
+}
+
+.page-content > h3 + * {
+  margin-top: 1rem;
+}
+
+/* Icons in headings */
+.page-content h2:before {
+  margin-right: 0.5rem;
+}

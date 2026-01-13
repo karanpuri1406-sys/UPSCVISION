@@ -81,47 +81,7 @@ Prior appointment required. Please call or WhatsApp to book your slot.
 
 Have a specific question? Fill out the form below and we'll get back to you promptly.
 
-<form class="contact-form" method="POST" action="https://formspree.io/f/your-form-id" netlify>
-  <div class="form-row">
-    <div class="form-group">
-      <label for="name">Full Name *</label>
-      <input type="text" id="name" name="name" placeholder="Enter your full name" required />
-    </div>
-    
-    <div class="form-group">
-      <label for="email">Email Address *</label>
-      <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
-    </div>
-  </div>
-
-  <div class="form-row">
-    <div class="form-group">
-      <label for="phone">Phone Number *</label>
-      <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required />
-    </div>
-    
-    <div class="form-group">
-      <label for="subject">Subject *</label>
-      <select id="subject" name="subject" required>
-        <option value="">Select a subject</option>
-        <option value="course_inquiry">Course Inquiry</option>
-        <option value="counseling">Request Counseling</option>
-        <option value="technical_support">Technical Support</option>
-        <option value="partnership">Partnership Inquiry</option>
-        <option value="other">Other</option>
-      </select>
-    </div>
-  </div>
-  
-  <div class="form-group">
-    <label for="message">Your Message *</label>
-    <textarea id="message" name="message" rows="6" placeholder="Tell us how we can help you..." required></textarea>
-  </div>
-  
-  <button type="submit" class="btn btn-primary btn-lg">
-    <i class="fas fa-paper-plane"></i> Send Message
-  </button>
-</form>
+**Note:** For immediate assistance, please use WhatsApp or call us directly. The contact form is monitored during business hours.
 
 ---
 

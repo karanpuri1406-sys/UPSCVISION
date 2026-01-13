@@ -1,9 +1,9 @@
 {{ define "main" }}
 <article class="section">
-  <div class="container">
-    <div style="max-width: 800px; margin: 0 auto;">
+  <div class="container{{ if or (eq .Section "contact") (eq .Section "about") }} container-wide{{ end }}">
+    <div class="content-wrapper">
       <h1>{{ .Title }}</h1>
-      <div class="blog-body">
+      <div class="page-content">
         {{ .Content }}
       </div>
     </div>
