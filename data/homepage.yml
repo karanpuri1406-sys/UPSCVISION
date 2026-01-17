@@ -1,74 +1,89 @@
 hero:
-  heading: "Master UPSC Civil Services with India's Most Trusted Platform"
-  subheading: "Transform your UPSC preparation journey with India's premier online coaching platform. Join 50,000+ aspirants who trust our expert faculty, AI-powered adaptive testing, and comprehensive study materials to crack UPSC CSE in their first attempt."
-  cta_primary: "Start Free Trial"
-  cta_primary_link: "/courses/"
-  cta_secondary: "Watch Success Stories"
-  hero_image: "/uploads/hero-illustration.png"
-
+  heading: Master UPSC Civil Services with India's Most Trusted Platform
+  subheading: Transform your UPSC preparation journey with India's premier online
+    coaching platform. Join 50,000+ aspirants who trust our expert faculty,
+    AI-powered adaptive testing, and comprehensive study materials to crack UPSC
+    CSE in their first attempt.
+  cta_primary: Start Free Trial
+  cta_primary_link: /courses/
+  cta_secondary: Watch Success Stories
+  hero_image: /uploads/upsc-hero-image.png
 stats:
-  - number: "50,000+"
-    label: "Active Students"
-  - number: "15,000+"
-    label: "Practice Questions"
-  - number: "1,200+"
-    label: "Hours of Video Lectures"
-  - number: "500+"
-    label: "Successful Selections"
-
+  - number: 50,000+
+    label: Active Students
+  - number: 15,000+
+    label: Practice Questions
+  - number: 1,200+
+    label: Hours of Video Lectures
+  - number: 500+
+    label: Successful Selections
 features:
-  title: "Why 95% Students Choose UPSC Vision Prep"
-  subtitle: "Comprehensive preparation ecosystem designed by IAS officers and UPSC toppers"
+  title: Why 95% Students Choose UPSC Vision Prep
+  subtitle: Comprehensive preparation ecosystem designed by IAS officers and UPSC toppers
   items:
-    - title: "IAS Officers as Mentors"
-      description: "Learn directly from serving and retired IAS/IPS officers who understand the examination inside-out. Get personalized mentorship, strategy sessions, and real-world insights that textbooks don't teach."
-      icon_color: "blue"
-    - title: "AI-Powered Adaptive Learning"
-      description: "Experience the future of UPSC preparation with our proprietary adaptive testing engine. Get personalized question sets based on your performance, track weak areas with precision analytics, and optimize your study time by 40%."
-      icon_color: "orange"
-    - title: "360° Success Ecosystem"
-      description: "From Prelims to Interview, we've got you covered. Daily current affairs, answer writing practice, mock interviews by UPSC board members, DAF preparation, and post-selection training - your complete journey partner."
-      icon_color: "green"
-
+    - title: IAS Officers as Mentors
+      description: Learn directly from serving and retired IAS/IPS officers who
+        understand the examination inside-out. Get personalized mentorship,
+        strategy sessions, and real-world insights that textbooks don't teach.
+      icon_color: blue
+    - title: AI-Powered Adaptive Learning
+      description: Experience the future of UPSC preparation with our proprietary
+        adaptive testing engine. Get personalized question sets based on your
+        performance, track weak areas with precision analytics, and optimize
+        your study time by 40%.
+      icon_color: orange
+    - title: 360° Success Ecosystem
+      description: From Prelims to Interview, we've got you covered. Daily current
+        affairs, answer writing practice, mock interviews by UPSC board members,
+        DAF preparation, and post-selection training - your complete journey
+        partner.
+      icon_color: green
 why_choose:
-  title: "The UPSC Vision Prep Advantage"
+  title: The UPSC Vision Prep Advantage
   items:
-    - title: "Comprehensive Course Coverage"
-      description: "Complete UPSC syllabus coverage from Prelims to Interview with 1,200+ hours of structured video lectures by subject experts"
-      icon: "book-open"
-    - title: "Live Interactive Classes"
-      description: "Daily live sessions with doubt-clearing, current affairs discussions, and direct interaction with faculty"
-      icon: "video"
-    - title: "15,000+ Practice Questions"
-      description: "Extensive question bank with detailed explanations, previous year papers, and AI-generated custom test series"
-      icon: "clipboard-list"
-    - title: "Daily Current Affairs"
-      description: "Curated daily news analysis, monthly magazines, and current affairs integration with static subjects"
-      icon: "newspaper"
-    - title: "Answer Writing Practice"
-      description: "Regular answer writing sessions with personalized feedback from experts and evaluation based on UPSC standards"
-      icon: "edit"
-    - title: "Mock Interviews"
-      description: "Realistic mock interviews conducted by former UPSC board members with detailed personality assessment"
-      icon: "users"
-
+    - title: Comprehensive Course Coverage
+      description: Complete UPSC syllabus coverage from Prelims to Interview with
+        1,200+ hours of structured video lectures by subject experts
+      icon: book-open
+    - title: Live Interactive Classes
+      description: Daily live sessions with doubt-clearing, current affairs
+        discussions, and direct interaction with faculty
+      icon: video
+    - title: 15,000+ Practice Questions
+      description: Extensive question bank with detailed explanations, previous year
+        papers, and AI-generated custom test series
+      icon: clipboard-list
+    - title: Daily Current Affairs
+      description: Curated daily news analysis, monthly magazines, and current affairs
+        integration with static subjects
+      icon: newspaper
+    - title: Answer Writing Practice
+      description: Regular answer writing sessions with personalized feedback from
+        experts and evaluation based on UPSC standards
+      icon: edit
+    - title: Mock Interviews
+      description: Realistic mock interviews conducted by former UPSC board members
+        with detailed personality assessment
+      icon: users
 cta_section:
-  heading: "Begin Your IAS Journey Today - Limited Seats Available"
-  subheading: "Join India's fastest-growing UPSC preparation platform trusted by 50,000+ aspirants. Get access to exclusive study materials, live classes with IAS mentors, and AI-powered personalized learning. Early bird discount of 40% ends soon!"
-  button_text: "Claim Your Spot Now"
-  
+  heading: Begin Your IAS Journey Today - Limited Seats Available
+  subheading: Join India's fastest-growing UPSC preparation platform trusted by
+    50,000+ aspirants. Get access to exclusive study materials, live classes
+    with IAS mentors, and AI-powered personalized learning. Early bird discount
+    of 40% ends soon!
+  button_text: Claim Your Spot Now
 success_metrics:
-  title: "Proven Track Record of Excellence"
+  title: Proven Track Record of Excellence
   items:
-    - number: "500+"
-      label: "Civil Services Selections"
-      sublabel: "Since 2020"
-    - number: "95%"
-      label: "Student Satisfaction"
-      sublabel: "Based on reviews"
-    - number: "Top 100"
-      label: "Rankers Every Year"
-      sublabel: "AIR under 100"
-    - number: "24/7"
-      label: "Learning Support"
-      sublabel: "Always available"
+    - number: 500+
+      label: Civil Services Selections
+      sublabel: Since 2020
+    - number: 95%
+      label: Student Satisfaction
+      sublabel: Based on reviews
+    - number: Top 100
+      label: Rankers Every Year
+      sublabel: AIR under 100
+    - number: 24/7
+      label: Learning Support
+      sublabel: Always available
