@@ -1,70 +1,71 @@
 ---
-title: "GS Foundation 2025"
-slug: "gs-foundation-2025"
-thumbnail: "/uploads/gs-foundation.jpg"
-description: "Comprehensive General Studies Foundation course covering entire UPSC syllabus with expert faculty and structured learning."
+title: GS Foundation 2025
+slug: gs-foundation-2025
+thumbnail: /uploads/4.png
+description: Comprehensive General Studies Foundation course covering entire
+  UPSC syllabus with expert faculty and structured learning.
 price: 15999
-instructor: "Dr. Rajesh Kumar & Team"
-duration: "6 months"
-category: "GS Foundation"
-status: "New"
-featured: true
-order: 1
-draft: false
+instructor: Dr. Rajesh Kumar & Team
+duration: 6 months
+category: GS Foundation
+status: New
 features:
-  - "500+ hours of live and recorded classes"
-  - "Complete syllabus coverage (Prelims + Mains)"
-  - "Daily current affairs integration"
-  - "Weekly tests and assessments"
-  - "Doubt clearing sessions"
-  - "Comprehensive study material"
-  - "Personal mentorship"
-  - "Interview guidance included"
+  - 500+ hours of live and recorded classes
+  - Complete syllabus coverage (Prelims + Mains)
+  - Daily current affairs integration
+  - Weekly tests and assessments
+  - Doubt clearing sessions
+  - Comprehensive study material
+  - Personal mentorship
+  - Interview guidance included
 curriculum:
   - module_title: "Module 1: History & Culture"
     topics:
-      - "Ancient Indian History"
-      - "Medieval Indian History"
-      - "Modern Indian History"
-      - "Freedom Struggle"
-      - "Art and Culture"
-      - "World History"
+      - Ancient Indian History
+      - Medieval Indian History
+      - Modern Indian History
+      - Freedom Struggle
+      - Art and Culture
+      - World History
   - module_title: "Module 2: Geography"
     topics:
-      - "Physical Geography"
-      - "Indian Geography"
-      - "World Geography"
-      - "Economic Geography"
-      - "Map-based questions"
+      - Physical Geography
+      - Indian Geography
+      - World Geography
+      - Economic Geography
+      - Map-based questions
   - module_title: "Module 3: Polity & Governance"
     topics:
-      - "Indian Constitution"
-      - "Political System"
-      - "Governance issues"
-      - "Social Justice"
-      - "International Relations"
+      - Indian Constitution
+      - Political System
+      - Governance issues
+      - Social Justice
+      - International Relations
   - module_title: "Module 4: Economy"
     topics:
-      - "Indian Economy"
-      - "Economic Development"
-      - "Government Schemes"
-      - "Banking & Finance"
-      - "Economic Survey & Budget"
+      - Indian Economy
+      - Economic Development
+      - Government Schemes
+      - Banking & Finance
+      - Economic Survey & Budget
   - module_title: "Module 5: Environment & Ecology"
     topics:
-      - "Environmental Concepts"
-      - "Biodiversity"
-      - "Climate Change"
-      - "Conservation efforts"
-      - "Environmental Laws"
+      - Environmental Concepts
+      - Biodiversity
+      - Climate Change
+      - Conservation efforts
+      - Environmental Laws
   - module_title: "Module 6: Science & Technology"
     topics:
-      - "Basic Science concepts"
-      - "Space Technology"
-      - "Defense Technology"
-      - "Biotechnology"
-      - "Digital India initiatives"
+      - Basic Science concepts
+      - Space Technology
+      - Defense Technology
+      - Biotechnology
+      - Digital India initiatives
 enrollment_link: "#"
+featured: true
+order: 1
+draft: false
 ---
 
 # GS Foundation 2025 - Complete UPSC Preparation Program
