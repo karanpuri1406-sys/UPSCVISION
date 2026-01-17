@@ -1,7 +1,7 @@
 ---
 title: Political Science Optional
 slug: political-science-optional
-thumbnail: /uploads/upsc-home.png
+thumbnail: /uploads/ps.png
 description: Complete Political Science Optional preparation with paper-wise
   coverage, thinkers, theories, and answer writing practice.
 price: 12999
