@@ -1,8 +1,9 @@
 ---
-title: "About UPSC Vision Prep - Expert UPSC Coaching Online"
-description: "Meet our expert team of UPSC mentors and learn about UPSC Vision Prep's comprehensive coaching programs for Prelims, Mains, and Interview preparation."
+title: About UPSC Vision Prep - Expert UPSC Coaching Online
+description: Meet our expert team of UPSC mentors and learn about UPSC Vision
+  Prep's comprehensive coaching programs for Prelims, Mains, and Interview
+  preparation.
 ---
-
 <div class="page-content about-page">
 
 <div class="about-hero" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); padding: 4rem 2rem; border-radius: var(--radius-xl); margin-bottom: 3rem; text-align: center;">
@@ -10,15 +11,15 @@ description: "Meet our expert team of UPSC mentors and learn about UPSC Vision P
   <p class="lead" style="max-width: 800px; margin: 0 auto; color: var(--gray-700); font-size: 1.25rem; line-height: 1.8;">Transforming UPSC dreams into reality through expert mentoring, structured preparation, and exam-focused guidance</p>
 </div>
 
-## 🎯 Who We Are
+### 🎯 Who We Are
 
 **UPSC Vision Prep Online** is a dedicated UPSC coaching platform committed to guiding aspirants through every stage of their civil services journey. Our approach is built on **clarity, structure, and exam-oriented mentoring**—helping students avoid common preparation traps and focus on what truly matters.
 
 We believe that **smart work beats hard work**, and the right guidance can save you years of trial and error. Our goal is not just to teach you subjects, but to help you **think like the exam expects, write like a topper, and stay consistent like a winner**.
 
----
+- - -
 
-## 👨‍🏫 Our Expert Team
+### 👨‍🏫 Our Expert Team
 
 <p style="text-align: center; font-size: 1.125rem; color: var(--gray-600); margin-bottom: 3rem;">Meet the dedicated individuals driving your UPSC success at UPSC Vision Prep Online</p>
 
@@ -27,6 +28,7 @@ We believe that **smart work beats hard work**, and the right guidance can save 
 <div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
 
 <!-- Team Member 1 -->
+
 <div class="team-member" style="text-align: center; transition: transform 0.3s ease;">
   <div class="team-photo-wrapper" style="position: relative; margin-bottom: 1.5rem; border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg);">
     <img src="/uploads/team-abhishek.jpg" alt="Abhishek Jain - UPSC Mentor" style="width: 100%; height: 350px; object-fit: cover; transition: transform 0.3s ease;" />
@@ -39,6 +41,7 @@ We believe that **smart work beats hard work**, and the right guidance can save 
 </div>
 
 <!-- Team Member 2 -->
+
 <div class="team-member" style="text-align: center; transition: transform 0.3s ease;">
   <div class="team-photo-wrapper" style="position: relative; margin-bottom: 1.5rem; border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg);">
     <img src="/uploads/team-suhavani.png" alt="Suhavani Bhullar - UPSC Mentor" style="width: 100%; height: 350px; object-fit: cover; transition: transform 0.3s ease;" />
@@ -51,6 +54,7 @@ We believe that **smart work beats hard work**, and the right guidance can save 
 </div>
 
 <!-- Team Member 3 -->
+
 <div class="team-member" style="text-align: center; transition: transform 0.3s ease;">
   <div class="team-photo-wrapper" style="position: relative; margin-bottom: 1.5rem; border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg);">
     <img src="/uploads/team-daman.png" alt="Dr. Daman Benipal - UPSC Mentor" style="width: 100%; height: 350px; object-fit: cover; transition: transform 0.3s ease;" />
@@ -63,6 +67,7 @@ We believe that **smart work beats hard work**, and the right guidance can save 
 </div>
 
 <!-- Team Member 4 -->
+
 <div class="team-member" style="text-align: center; transition: transform 0.3s ease;">
   <div class="team-photo-wrapper" style="position: relative; margin-bottom: 1.5rem; border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg);">
     <img src="/uploads/team-priyanka.png" alt="Priyanka Dhillon - UPSC Mentor" style="width: 100%; height: 350px; object-fit: cover; transition: transform 0.3s ease;" />
@@ -75,6 +80,7 @@ We believe that **smart work beats hard work**, and the right guidance can save 
 </div>
 
 <!-- Team Member 5 -->
+
 <div class="team-member" style="text-align: center; transition: transform 0.3s ease;">
   <div class="team-photo-wrapper" style="position: relative; margin-bottom: 1.5rem; border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg);">
     <img src="/uploads/team-aliya.png" alt="Aliya Nazakat - UPSC Mentor" style="width: 100%; height: 350px; object-fit: cover; transition: transform 0.3s ease;" />
@@ -90,9 +96,9 @@ We believe that **smart work beats hard work**, and the right guidance can save 
 
 </div>
 
----
+- - -
 
-## 📚 Our Comprehensive UPSC Programs
+### 📚 Our Comprehensive UPSC Programs
 
 <p style="text-align: center; font-size: 1.125rem; color: var(--gray-600); margin-bottom: 3rem;">Three carefully designed programs to meet aspirants at different stages of their UPSC journey</p>
 
@@ -101,6 +107,7 @@ We believe that **smart work beats hard work**, and the right guidance can save 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 2rem;">
 
 <!-- Foundation Program -->
+
 <div class="program-card foundation" style="background: var(--white); padding: 2.5rem; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); transition: all var(--transition-base); border-top: 5px solid var(--accent-purple); position: relative; overflow: hidden;">
   <div class="program-icon" style="width: 70px; height: 70px; border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 1.5rem; background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); color: var(--white);">📚</div>
   <h3 style="font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--gray-900);">Foundation Program</h3>
@@ -111,6 +118,7 @@ We believe that **smart work beats hard work**, and the right guidance can save 
 </div>
 
 <!-- Advanced Program -->
+
 <div class="program-card advanced" style="background: var(--white); padding: 2.5rem; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); transition: all var(--transition-base); border-top: 5px solid var(--accent-orange); position: relative; overflow: hidden;">
   <div class="program-icon" style="width: 70px; height: 70px; border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 1.5rem; background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); color: var(--white);">🎯</div>
   <h3 style="font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--gray-900);">Advanced Program</h3>
@@ -121,6 +129,7 @@ We believe that **smart work beats hard work**, and the right guidance can save 
 </div>
 
 <!-- Mentorship Program -->
+
 <div class="program-card mentorship" style="background: var(--white); padding: 2.5rem; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); transition: all var(--transition-base); border-top: 5px solid var(--success-green); position: relative; overflow: hidden;">
   <div class="program-icon" style="width: 70px; height: 70px; border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 1.5rem; background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: var(--white);">🤝</div>
   <h3 style="font-size: 1.75rem; margin-bottom: 0.5rem; color: var(--gray-900);">Mentorship Program</h3>
@@ -134,9 +143,9 @@ We believe that **smart work beats hard work**, and the right guidance can save 
 
 </div>
 
----
+- - -
 
-## 🌟 Why Choose UPSC Vision Prep Online?
+### 🌟 Why Choose UPSC Vision Prep Online?
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0;">
 
@@ -172,18 +181,18 @@ We believe that **smart work beats hard work**, and the right guidance can save 
 
 </div>
 
----
+- - -
 
-## 💪 Our Commitment to You
+### 💪 Our Commitment to You
 
 <div style="background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%); padding: 3rem; border-radius: var(--radius-xl); color: white; text-align: center; margin: 3rem 0; box-shadow: var(--shadow-2xl);">
   <p style="font-size: 1.25rem; line-height: 1.9; margin-bottom: 1.5rem; color: rgba(255,255,255,0.95);">At UPSC Vision Prep Online, we believe that <strong>smart work beats hard work</strong>, and the right guidance can save you years of trial and error. Our goal is not just to teach you subjects, but to help you <strong>think like the exam expects, write like a topper, and stay consistent like a winner</strong>.</p>
   <p style="font-size: 1.125rem; line-height: 1.8; margin: 0; color: rgba(255,255,255,0.9);">Whether you're starting fresh or refining your preparation, we're here to guide you every step of the way.</p>
 </div>
 
----
+- - -
 
-## 🚀 Ready to Begin Your UPSC Journey?
+### 🚀 Ready to Begin Your UPSC Journey?
 
 <div style="text-align: center; margin: 3rem 0;">
   <p style="font-size: 1.125rem; color: var(--gray-600); margin-bottom: 2rem;">Join our expert-led programs and experience the difference that structured, exam-focused preparation can make.</p>
@@ -193,9 +202,9 @@ We believe that **smart work beats hard work**, and the right guidance can save 
   </div>
 </div>
 
----
+- - -
 
-## 📞 Get in Touch
+### 📞 Get in Touch
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 2rem 0; padding: 2rem; background: var(--gray-50); border-radius: var(--radius-lg);">
 
@@ -224,7 +233,7 @@ We believe that **smart work beats hard work**, and the right guidance can save 
   <p style="color: var(--gray-600); margin: 0;">Monday - Saturday: 9:00 AM - 8:00 PM IST<br>Sunday: 10:00 AM - 6:00 PM IST</p>
 </div>
 
----
+- - -
 
 <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: var(--radius-lg); margin-top: 3rem;">
   <p style="font-size: 1.125rem; font-style: italic; color: var(--gray-700); margin: 0;"><strong>UPSC Vision Prep Online</strong> - Where Clarity Meets Success ✨</p>
