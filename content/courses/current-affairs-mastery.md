@@ -1,7 +1,7 @@
 ---
 title: Current Affairs Mastery 2025
 slug: current-affairs-mastery
-thumbnail: /uploads/slot-0-1767614921586.png
+thumbnail: /uploads/1.png
 description: Comprehensive current affairs program with daily updates, monthly
   compilations, MCQ practice, and mains answer integration for complete UPSC
   preparation.
