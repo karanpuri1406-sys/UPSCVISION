@@ -1,58 +1,59 @@
 ---
-title: "Political Science Optional"
-slug: "political-science-optional"
-thumbnail: "/uploads/political-science.jpg"
-description: "Complete Political Science Optional preparation with paper-wise coverage, thinkers, theories, and answer writing practice."
+title: Political Science Optional
+slug: political-science-optional
+thumbnail: /uploads/upsc-home.png
+description: Complete Political Science Optional preparation with paper-wise
+  coverage, thinkers, theories, and answer writing practice.
 price: 12999
-instructor: "Prof. Anita Desai"
-duration: "5 months"
-category: "Optional Subjects"
-status: "Ongoing"
-featured: true
-order: 2
-draft: false
+instructor: Prof. Anita Desai
+duration: 5 months
+category: Optional Subjects
+status: Ongoing
 features:
-  - "Complete Paper I & Paper II coverage"
-  - "Thinkers and theories in-depth analysis"
-  - "Indian politics contemporary issues"
-  - "Weekly answer writing practice"
-  - "Diagram and flowchart techniques"
-  - "Previous year paper analysis"
-  - "Monthly test series"
-  - "Personal feedback on answers"
+  - Complete Paper I & Paper II coverage
+  - Thinkers and theories in-depth analysis
+  - Indian politics contemporary issues
+  - Weekly answer writing practice
+  - Diagram and flowchart techniques
+  - Previous year paper analysis
+  - Monthly test series
+  - Personal feedback on answers
 curriculum:
   - module_title: "Paper I - Part A: Political Theory"
     topics:
-      - "Political Theory - meaning and approaches"
-      - "Theories of state - Liberal, Marxist, Pluralist"
-      - "Justice - Rawls, Nozick, Communitarian"
-      - "Rights - Natural, Human, Fundamental"
-      - "Democracy and representation"
-      - "Power, authority and legitimacy"
+      - Political Theory - meaning and approaches
+      - Theories of state - Liberal, Marxist, Pluralist
+      - Justice - Rawls, Nozick, Communitarian
+      - Rights - Natural, Human, Fundamental
+      - Democracy and representation
+      - Power, authority and legitimacy
   - module_title: "Paper I - Part B: Indian Government & Politics"
     topics:
-      - "Indian Nationalist Movement"
-      - "Making of Indian Constitution"
-      - "Federalism in India"
-      - "Party system and electoral politics"
-      - "Social movements"
-      - "Political economy of development"
+      - Indian Nationalist Movement
+      - Making of Indian Constitution
+      - Federalism in India
+      - Party system and electoral politics
+      - Social movements
+      - Political economy of development
   - module_title: "Paper II - Part A: Comparative Politics"
     topics:
-      - "Comparative analysis of political systems"
-      - "Political parties and pressure groups"
-      - "Legislature, Executive, Judiciary"
-      - "Theories of comparative politics"
-      - "Democracy in comparative perspective"
+      - Comparative analysis of political systems
+      - Political parties and pressure groups
+      - Legislature, Executive, Judiciary
+      - Theories of comparative politics
+      - Democracy in comparative perspective
   - module_title: "Paper II - Part B: International Relations"
     topics:
-      - "Theories of International Relations"
-      - "Cold War and post-Cold War order"
-      - "India's foreign policy"
-      - "Global commons"
-      - "International organizations"
-      - "Contemporary global issues"
+      - Theories of International Relations
+      - Cold War and post-Cold War order
+      - India's foreign policy
+      - Global commons
+      - International organizations
+      - Contemporary global issues
 enrollment_link: "#"
+featured: true
+order: 2
+draft: false
 ---
 
 # Political Science Optional - Complete Preparation
