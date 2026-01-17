@@ -1,7 +1,7 @@
 ---
 title: GS Foundation 2025
 slug: gs-foundation-2025
-thumbnail: /uploads/4.png
+thumbnail: /uploads/fd.png
 description: Comprehensive General Studies Foundation course covering entire
   UPSC syllabus with expert faculty and structured learning.
 price: 15999
